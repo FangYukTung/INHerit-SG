@@ -1,0 +1,700 @@
+{
+  "schema_version": 2,
+  "policy": "Aliases are symmetric canonicalizations. Soft pairs are reviewed, directional map-label-to-simulator-category compatibility edges and are not transitive. Unreviewed and UNSURE pairs are rejected.",
+  "source_ontology": "category_ontology_v1.json (historical evaluator ontology)",
+  "source_decisions": "experiments/aaai_revision/category_pair_review_decisions.json",
+  "review_summary": {
+    "reviewed": 167,
+    "accepted": 132,
+    "rejected": 35,
+    "unsure": 0
+  },
+  "categories": {
+    "curtain": [
+      "drape",
+      "drapes",
+      "window curtain"
+    ],
+    "flowerpot": [
+      "flower pot",
+      "plant pot"
+    ],
+    "nightstand": [
+      "bedside table",
+      "night stand"
+    ],
+    "sofa": [
+      "couch"
+    ],
+    "television": [
+      "led tv",
+      "tv",
+      "tv monitor"
+    ],
+    "toilet": [
+      "toilet bowl"
+    ]
+  },
+  "soft_pairs": [
+    {
+      "map_label": "armchair",
+      "simulator_category": "chair",
+      "review_id": "C0007"
+    },
+    {
+      "map_label": "bar stool",
+      "simulator_category": "stool",
+      "review_id": "C0160"
+    },
+    {
+      "map_label": "bath towel",
+      "simulator_category": "bathroom towel",
+      "review_id": "C0149"
+    },
+    {
+      "map_label": "bathroom cabinet",
+      "simulator_category": "cabinet",
+      "review_id": "C0111"
+    },
+    {
+      "map_label": "bathroom cabinet",
+      "simulator_category": "kitchen cabinet",
+      "review_id": "C0158"
+    },
+    {
+      "map_label": "bathroom towel",
+      "simulator_category": "bath towel",
+      "review_id": "C0150"
+    },
+    {
+      "map_label": "bathroom towel",
+      "simulator_category": "towel",
+      "review_id": "C0023"
+    },
+    {
+      "map_label": "bathtub",
+      "simulator_category": "bath",
+      "review_id": "C0157"
+    },
+    {
+      "map_label": "bed",
+      "simulator_category": "bed sheet",
+      "review_id": "C0100"
+    },
+    {
+      "map_label": "bed pillow",
+      "simulator_category": "pillow",
+      "review_id": "C0128"
+    },
+    {
+      "map_label": "bed table",
+      "simulator_category": "table",
+      "review_id": "C0144"
+    },
+    {
+      "map_label": "bedside table",
+      "simulator_category": "bedside cabinet",
+      "review_id": "C0064"
+    },
+    {
+      "map_label": "bottle",
+      "simulator_category": "bottle of soap",
+      "review_id": "C0145"
+    },
+    {
+      "map_label": "box",
+      "simulator_category": "boxes",
+      "review_id": "C0093"
+    },
+    {
+      "map_label": "bunk bed",
+      "simulator_category": "bed",
+      "review_id": "C0042"
+    },
+    {
+      "map_label": "cabinet",
+      "simulator_category": "bath cabinet",
+      "review_id": "C0088"
+    },
+    {
+      "map_label": "cabinet",
+      "simulator_category": "bathroom cabinet",
+      "review_id": "C0002"
+    },
+    {
+      "map_label": "cabinet",
+      "simulator_category": "cabinet door",
+      "review_id": "C0077"
+    },
+    {
+      "map_label": "cabinet",
+      "simulator_category": "display cabinet",
+      "review_id": "C0045"
+    },
+    {
+      "map_label": "cabinet",
+      "simulator_category": "kitchen cabinet",
+      "review_id": "C0001"
+    },
+    {
+      "map_label": "cabinet",
+      "simulator_category": "kitchen cabinet door",
+      "review_id": "C0069"
+    },
+    {
+      "map_label": "cabinet",
+      "simulator_category": "kitchen cabinet drawer",
+      "review_id": "C0124"
+    },
+    {
+      "map_label": "cabinet",
+      "simulator_category": "kitchen lower cabinet",
+      "review_id": "C0056"
+    },
+    {
+      "map_label": "cabinet",
+      "simulator_category": "sink cabinet",
+      "review_id": "C0005"
+    },
+    {
+      "map_label": "cabinet",
+      "simulator_category": "storage cabinet",
+      "review_id": "C0138"
+    },
+    {
+      "map_label": "cabinet",
+      "simulator_category": "wash cabinet",
+      "review_id": "C0035"
+    },
+    {
+      "map_label": "cabinet wardrobe",
+      "simulator_category": "wardrobe",
+      "review_id": "C0136"
+    },
+    {
+      "map_label": "cabinetry",
+      "simulator_category": "cabinet",
+      "review_id": "C0092"
+    },
+    {
+      "map_label": "cabinetry",
+      "simulator_category": "kitchen cabinet",
+      "review_id": "C0137"
+    },
+    {
+      "map_label": "canopy bed",
+      "simulator_category": "bed",
+      "review_id": "C0147"
+    },
+    {
+      "map_label": "carpet",
+      "simulator_category": "rug",
+      "review_id": "C0038"
+    },
+    {
+      "map_label": "chair",
+      "simulator_category": "armchair",
+      "review_id": "C0004"
+    },
+    {
+      "map_label": "chair",
+      "simulator_category": "desk chair",
+      "review_id": "C0052"
+    },
+    {
+      "map_label": "chair",
+      "simulator_category": "dining chair",
+      "review_id": "C0011"
+    },
+    {
+      "map_label": "chair",
+      "simulator_category": "folding chair",
+      "review_id": "C0116"
+    },
+    {
+      "map_label": "chair",
+      "simulator_category": "rocking chair",
+      "review_id": "C0078"
+    },
+    {
+      "map_label": "chair",
+      "simulator_category": "sofa chair",
+      "review_id": "C0113"
+    },
+    {
+      "map_label": "chair armchair",
+      "simulator_category": "armchair",
+      "review_id": "C0152"
+    },
+    {
+      "map_label": "chair desk",
+      "simulator_category": "chair",
+      "review_id": "C0106"
+    },
+    {
+      "map_label": "chair desk",
+      "simulator_category": "dining chair",
+      "review_id": "C0139"
+    },
+    {
+      "map_label": "chest of drawers",
+      "simulator_category": "drawer",
+      "review_id": "C0073"
+    },
+    {
+      "map_label": "closet door",
+      "simulator_category": "door",
+      "review_id": "C0087"
+    },
+    {
+      "map_label": "clothes",
+      "simulator_category": "cloth",
+      "review_id": "C0046"
+    },
+    {
+      "map_label": "clothes",
+      "simulator_category": "clothes container",
+      "review_id": "C0164"
+    },
+    {
+      "map_label": "clothes",
+      "simulator_category": "clothes on shelf",
+      "review_id": "C0125"
+    },
+    {
+      "map_label": "clothes",
+      "simulator_category": "hanging clothes",
+      "review_id": "C0009"
+    },
+    {
+      "map_label": "clothes wardrobe",
+      "simulator_category": "wardrobe",
+      "review_id": "C0103"
+    },
+    {
+      "map_label": "coffee table",
+      "simulator_category": "table",
+      "review_id": "C0034"
+    },
+    {
+      "map_label": "counter top",
+      "simulator_category": "countertop",
+      "review_id": "C0104"
+    },
+    {
+      "map_label": "countertop",
+      "simulator_category": "kitchen counter",
+      "review_id": "C0053"
+    },
+    {
+      "map_label": "countertop",
+      "simulator_category": "kitchen countertop item",
+      "review_id": "C0055"
+    },
+    {
+      "map_label": "curtain",
+      "simulator_category": "curtain rod",
+      "review_id": "C0010"
+    },
+    {
+      "map_label": "curtain",
+      "simulator_category": "shower curtain",
+      "review_id": "C0037"
+    },
+    {
+      "map_label": "curtains",
+      "simulator_category": "curtain",
+      "review_id": "C0110"
+    },
+    {
+      "map_label": "day bed",
+      "simulator_category": "bed",
+      "review_id": "C0131"
+    },
+    {
+      "map_label": "desk",
+      "simulator_category": "computer desk",
+      "review_id": "C0043"
+    },
+    {
+      "map_label": "desk",
+      "simulator_category": "desk chair",
+      "review_id": "C0028"
+    },
+    {
+      "map_label": "desk chair",
+      "simulator_category": "chair",
+      "review_id": "C0129"
+    },
+    {
+      "map_label": "desk chair",
+      "simulator_category": "dining chair",
+      "review_id": "C0105"
+    },
+    {
+      "map_label": "desk table",
+      "simulator_category": "desk",
+      "review_id": "C0156"
+    },
+    {
+      "map_label": "dining table",
+      "simulator_category": "table",
+      "review_id": "C0019"
+    },
+    {
+      "map_label": "dinning table",
+      "simulator_category": "table",
+      "review_id": "C0165"
+    },
+    {
+      "map_label": "dog bed",
+      "simulator_category": "bed",
+      "review_id": "C0062"
+    },
+    {
+      "map_label": "door",
+      "simulator_category": "door frame",
+      "review_id": "C0107"
+    },
+    {
+      "map_label": "drawer",
+      "simulator_category": "chest of drawers",
+      "review_id": "C0017"
+    },
+    {
+      "map_label": "dresser nightstand",
+      "simulator_category": "nightstand",
+      "review_id": "C0130"
+    },
+    {
+      "map_label": "dresser wardrobe",
+      "simulator_category": "wardrobe",
+      "review_id": "C0118"
+    },
+    {
+      "map_label": "exhibition picture",
+      "simulator_category": "picture",
+      "review_id": "C0085"
+    },
+    {
+      "map_label": "furniture",
+      "simulator_category": "couch",
+      "review_id": "C0074"
+    },
+    {
+      "map_label": "glass door",
+      "simulator_category": "door",
+      "review_id": "C0059"
+    },
+    {
+      "map_label": "glass wall",
+      "simulator_category": "wall",
+      "review_id": "C0117"
+    },
+    {
+      "map_label": "hanging clothes",
+      "simulator_category": "clothes hanger",
+      "review_id": "C0153"
+    },
+    {
+      "map_label": "hospital bed",
+      "simulator_category": "bed",
+      "review_id": "C0108"
+    },
+    {
+      "map_label": "infant bed",
+      "simulator_category": "bed",
+      "review_id": "C0040"
+    },
+    {
+      "map_label": "lamp",
+      "simulator_category": "bedside lamp",
+      "review_id": "C0049"
+    },
+    {
+      "map_label": "lamp",
+      "simulator_category": "ceiling lamp",
+      "review_id": "C0084"
+    },
+    {
+      "map_label": "lamp",
+      "simulator_category": "floor lamp",
+      "review_id": "C0121"
+    },
+    {
+      "map_label": "lamp",
+      "simulator_category": "table lamp",
+      "review_id": "C0031"
+    },
+    {
+      "map_label": "laundry basket",
+      "simulator_category": "basket",
+      "review_id": "C0098"
+    },
+    {
+      "map_label": "mirror",
+      "simulator_category": "mirror frame",
+      "review_id": "C0013"
+    },
+    {
+      "map_label": "mirror frame",
+      "simulator_category": "mirror",
+      "review_id": "C0008"
+    },
+    {
+      "map_label": "photo",
+      "simulator_category": "picture",
+      "review_id": "C0076"
+    },
+    {
+      "map_label": "picture",
+      "simulator_category": "photo",
+      "review_id": "C0154"
+    },
+    {
+      "map_label": "picture frame",
+      "simulator_category": "picture",
+      "review_id": "C0006"
+    },
+    {
+      "map_label": "pillow cushion",
+      "simulator_category": "pillow",
+      "review_id": "C0120"
+    },
+    {
+      "map_label": "plant",
+      "simulator_category": "decorative plant",
+      "review_id": "C0033"
+    },
+    {
+      "map_label": "refrigerator",
+      "simulator_category": "refrigerator cabinet",
+      "review_id": "C0119"
+    },
+    {
+      "map_label": "rocking chair",
+      "simulator_category": "chair",
+      "review_id": "C0079"
+    },
+    {
+      "map_label": "round table",
+      "simulator_category": "table",
+      "review_id": "C0126"
+    },
+    {
+      "map_label": "rug",
+      "simulator_category": "carpet",
+      "review_id": "C0115"
+    },
+    {
+      "map_label": "screen door",
+      "simulator_category": "door",
+      "review_id": "C0095"
+    },
+    {
+      "map_label": "shelf",
+      "simulator_category": "shelving",
+      "review_id": "C0048"
+    },
+    {
+      "map_label": "shelving",
+      "simulator_category": "shelf",
+      "review_id": "C0058"
+    },
+    {
+      "map_label": "shower curtain",
+      "simulator_category": "curtain",
+      "review_id": "C0065"
+    },
+    {
+      "map_label": "shower curtain",
+      "simulator_category": "curtain rod",
+      "review_id": "C0162"
+    },
+    {
+      "map_label": "shower curtain",
+      "simulator_category": "window curtain",
+      "review_id": "C0132"
+    },
+    {
+      "map_label": "side table",
+      "simulator_category": "table",
+      "review_id": "C0114"
+    },
+    {
+      "map_label": "sink",
+      "simulator_category": "bath sink",
+      "review_id": "C0067"
+    },
+    {
+      "map_label": "sofa chair",
+      "simulator_category": "chair",
+      "review_id": "C0020"
+    },
+    {
+      "map_label": "sofa chair",
+      "simulator_category": "couch",
+      "review_id": "C0060"
+    },
+    {
+      "map_label": "sofa chair",
+      "simulator_category": "sofa",
+      "review_id": "C0151"
+    },
+    {
+      "map_label": "stair",
+      "simulator_category": "stairs",
+      "review_id": "C0148"
+    },
+    {
+      "map_label": "stool ottoman",
+      "simulator_category": "ottoman",
+      "review_id": "C0134"
+    },
+    {
+      "map_label": "storage box",
+      "simulator_category": "box",
+      "review_id": "C0082"
+    },
+    {
+      "map_label": "stove",
+      "simulator_category": "stovetop",
+      "review_id": "C0155"
+    },
+    {
+      "map_label": "swivel chair",
+      "simulator_category": "chair",
+      "review_id": "C0022"
+    },
+    {
+      "map_label": "table",
+      "simulator_category": "coffee table",
+      "review_id": "C0080"
+    },
+    {
+      "map_label": "table",
+      "simulator_category": "dining table",
+      "review_id": "C0051"
+    },
+    {
+      "map_label": "table",
+      "simulator_category": "side table",
+      "review_id": "C0161"
+    },
+    {
+      "map_label": "throw pillow",
+      "simulator_category": "pillow",
+      "review_id": "C0096"
+    },
+    {
+      "map_label": "tile wall",
+      "simulator_category": "wall",
+      "review_id": "C0036"
+    },
+    {
+      "map_label": "toilet paper",
+      "simulator_category": "toilet paper dispenser",
+      "review_id": "C0142"
+    },
+    {
+      "map_label": "toilet toilet paper",
+      "simulator_category": "toilet paper",
+      "review_id": "C0127"
+    },
+    {
+      "map_label": "towel",
+      "simulator_category": "bath towel",
+      "review_id": "C0071"
+    },
+    {
+      "map_label": "towel",
+      "simulator_category": "bathroom towel",
+      "review_id": "C0027"
+    },
+    {
+      "map_label": "towel",
+      "simulator_category": "paper towel",
+      "review_id": "C0072"
+    },
+    {
+      "map_label": "vase",
+      "simulator_category": "flower vase",
+      "review_id": "C0030"
+    },
+    {
+      "map_label": "wall board",
+      "simulator_category": "wall",
+      "review_id": "C0112"
+    },
+    {
+      "map_label": "wall cabinet",
+      "simulator_category": "cabinet",
+      "review_id": "C0018"
+    },
+    {
+      "map_label": "wall cabinet",
+      "simulator_category": "kitchen cabinet",
+      "review_id": "C0041"
+    },
+    {
+      "map_label": "wall cabinet",
+      "simulator_category": "kitchen cabinet drawer",
+      "review_id": "C0135"
+    },
+    {
+      "map_label": "wash cabinet",
+      "simulator_category": "cabinet",
+      "review_id": "C0075"
+    },
+    {
+      "map_label": "washbasin",
+      "simulator_category": "washbasin counter",
+      "review_id": "C0081"
+    },
+    {
+      "map_label": "washbasin counter",
+      "simulator_category": "washbasin",
+      "review_id": "C0097"
+    },
+    {
+      "map_label": "washing machine",
+      "simulator_category": "laundry machine",
+      "review_id": "C0039"
+    },
+    {
+      "map_label": "washing machine",
+      "simulator_category": "washer-dryer",
+      "review_id": "C0140"
+    },
+    {
+      "map_label": "window",
+      "simulator_category": "window frame",
+      "review_id": "C0032"
+    },
+    {
+      "map_label": "window",
+      "simulator_category": "window glass",
+      "review_id": "C0122"
+    },
+    {
+      "map_label": "window curtain",
+      "simulator_category": "curtain rod",
+      "review_id": "C0123"
+    },
+    {
+      "map_label": "window curtain",
+      "simulator_category": "shower curtain",
+      "review_id": "C0159"
+    },
+    {
+      "map_label": "window shade",
+      "simulator_category": "window",
+      "review_id": "C0146"
+    },
+    {
+      "map_label": "wood wall",
+      "simulator_category": "wall",
+      "review_id": "C0044"
+    }
+  ]
+}

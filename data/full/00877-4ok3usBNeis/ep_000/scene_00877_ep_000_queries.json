@@ -1,0 +1,7261 @@
+[
+  {
+    "meta": {
+      "query_id": "A1-0000",
+      "query_type": "A1_Room",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a dresser in the basement.",
+      "target_category": "dresser",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "basement"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        5
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 419,
+        "category": "dresser",
+        "fail_reason": "wrong_room",
+        "debug_info": "In bedroom, expected basement"
+      },
+      {
+        "object_id": 486,
+        "category": "dresser",
+        "fail_reason": "wrong_room",
+        "debug_info": "In office, expected basement"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 5,
+        "frame_id": [
+          96,
+          124,
+          413,
+          555
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0001",
+      "query_type": "A1_Room",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a washbasin in the bathroom.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "bathroom"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        90,
+        386
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 113,
+        "category": "washbasin",
+        "fail_reason": "wrong_room",
+        "debug_info": "In laundry room, expected bathroom"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 90,
+        "frame_id": [
+          92,
+          137,
+          165,
+          195
+        ]
+      },
+      {
+        "object_id": 386,
+        "frame_id": [
+          780,
+          872,
+          917,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0002",
+      "query_type": "A1_Room",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a pillow in the living room.",
+      "target_category": "pillow",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "living room"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        270,
+        272,
+        273
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 200,
+        "category": "pillow",
+        "fail_reason": "wrong_room",
+        "debug_info": "In bedroom, expected living room"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 270,
+        "frame_id": [
+          970,
+          1061,
+          1081,
+          1121
+        ]
+      },
+      {
+        "object_id": 272,
+        "frame_id": [
+          1060,
+          1080,
+          1113
+        ]
+      },
+      {
+        "object_id": 273,
+        "frame_id": [
+          1060,
+          1080,
+          1112
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0003",
+      "query_type": "A1_Room",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a washbasin in the laundry room.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "laundry room"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        113
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 90,
+        "category": "washbasin",
+        "fail_reason": "wrong_room",
+        "debug_info": "In bathroom, expected laundry room"
+      },
+      {
+        "object_id": 386,
+        "category": "washbasin",
+        "fail_reason": "wrong_room",
+        "debug_info": "In bathroom, expected laundry room"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 113,
+        "frame_id": [
+          266,
+          287,
+          543
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0004",
+      "query_type": "A1_Room",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a dresser in the office.",
+      "target_category": "dresser",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "office"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        486
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 419,
+        "category": "dresser",
+        "fail_reason": "wrong_room",
+        "debug_info": "In bedroom, expected office"
+      },
+      {
+        "object_id": 5,
+        "category": "dresser",
+        "fail_reason": "wrong_room",
+        "debug_info": "In basement, expected office"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 486,
+        "frame_id": [
+          772,
+          793,
+          837
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0005",
+      "query_type": "A1_Room",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a refrigerator in the basement.",
+      "target_category": "refrigerator",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "basement"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        4
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 334,
+        "category": "refrigerator",
+        "fail_reason": "wrong_room",
+        "debug_info": "In kitchen, expected basement"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 4,
+        "frame_id": [
+          2,
+          22,
+          111
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0006",
+      "query_type": "A1_Room",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a curtain in the office.",
+      "target_category": "curtain",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "office"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        464,
+        465
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 426,
+        "category": "curtain",
+        "fail_reason": "wrong_room",
+        "debug_info": "In bedroom, expected office"
+      },
+      {
+        "object_id": 427,
+        "category": "curtain",
+        "fail_reason": "wrong_room",
+        "debug_info": "In bedroom, expected office"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 464,
+        "frame_id": [
+          772,
+          794,
+          830,
+          902
+        ]
+      },
+      {
+        "object_id": 465,
+        "frame_id": [
+          690,
+          800,
+          820
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0007",
+      "query_type": "A1_Room",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a shelf in the laundry room.",
+      "target_category": "shelf",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "laundry room"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        123
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 357,
+        "category": "shelf",
+        "fail_reason": "wrong_room",
+        "debug_info": "In kitchen, expected laundry room"
+      },
+      {
+        "object_id": 7,
+        "category": "shelf",
+        "fail_reason": "wrong_room",
+        "debug_info": "In basement, expected laundry room"
+      },
+      {
+        "object_id": 183,
+        "category": "shelf",
+        "fail_reason": "wrong_room",
+        "debug_info": "In bedroom, expected laundry room"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 123,
+        "frame_id": [
+          126,
+          156,
+          241,
+          261,
+          300
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0008",
+      "query_type": "A1_Room",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a refrigerator in the kitchen.",
+      "target_category": "refrigerator",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "kitchen"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        334
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 4,
+        "category": "refrigerator",
+        "fail_reason": "wrong_room",
+        "debug_info": "In basement, expected kitchen"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 334,
+        "frame_id": [
+          654,
+          879,
+          990,
+          1023,
+          1047
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0009",
+      "query_type": "A1_Room",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a curtain in the bedroom.",
+      "target_category": "curtain",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "bedroom"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        426,
+        427
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 465,
+        "category": "curtain",
+        "fail_reason": "wrong_room",
+        "debug_info": "In office, expected bedroom"
+      },
+      {
+        "object_id": 464,
+        "category": "curtain",
+        "fail_reason": "wrong_room",
+        "debug_info": "In office, expected bedroom"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 426,
+        "frame_id": [
+          0,
+          45,
+          722,
+          742
+        ]
+      },
+      {
+        "object_id": 427,
+        "frame_id": [
+          45,
+          713,
+          735,
+          857
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0010",
+      "query_type": "A1_Room",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a dresser in the bedroom.",
+      "target_category": "dresser",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "bedroom"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        419
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 5,
+        "category": "dresser",
+        "fail_reason": "wrong_room",
+        "debug_info": "In basement, expected bedroom"
+      },
+      {
+        "object_id": 486,
+        "category": "dresser",
+        "fail_reason": "wrong_room",
+        "debug_info": "In office, expected bedroom"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 419,
+        "frame_id": [
+          698,
+          719,
+          745
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0011",
+      "query_type": "A1_Room",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a rug in the bathroom.",
+      "target_category": "rug",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "bathroom"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        399
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 513,
+        "category": "rug",
+        "fail_reason": "wrong_room",
+        "debug_info": "In basement, expected bathroom"
+      },
+      {
+        "object_id": 70,
+        "category": "rug",
+        "fail_reason": "wrong_room",
+        "debug_info": "In basement, expected bathroom"
+      },
+      {
+        "object_id": 69,
+        "category": "rug",
+        "fail_reason": "wrong_room",
+        "debug_info": "In basement, expected bathroom"
+      },
+      {
+        "object_id": 252,
+        "category": "rug",
+        "fail_reason": "wrong_room",
+        "debug_info": "In entryway, expected bathroom"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 399,
+        "frame_id": [
+          668,
+          777,
+          897,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B1-0000",
+      "query_type": "B1_Area",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a curtain in the Window Area.",
+      "target_category": "curtain",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Window Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        426,
+        427
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 464,
+        "category": "curtain",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Window and Curtain Area, expected Window Area"
+      },
+      {
+        "object_id": 465,
+        "category": "curtain",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Window and Curtain Area, expected Window Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 426,
+        "frame_id": [
+          0,
+          45,
+          722,
+          742
+        ]
+      },
+      {
+        "object_id": 427,
+        "frame_id": [
+          45,
+          713,
+          735,
+          857
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B1-0001",
+      "query_type": "B1_Area",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a towel in the Towel Area.",
+      "target_category": "towel",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Towel Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        88
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 384,
+        "category": "towel",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Storage Area, expected Towel Area"
+      },
+      {
+        "object_id": 395,
+        "category": "towel",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Storage Area, expected Towel Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 88,
+        "frame_id": [
+          92,
+          165,
+          190
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B1-0002",
+      "query_type": "B1_Area",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a washbasin in the Washing Zone.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Washing Zone"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        113
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 386,
+        "category": "washbasin",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Washbasin Area, expected Washing Zone"
+      },
+      {
+        "object_id": 90,
+        "category": "washbasin",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Washbasin Area, expected Washing Zone"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 113,
+        "frame_id": [
+          266,
+          287,
+          543
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B1-0003",
+      "query_type": "B1_Area",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a mirror in the Washbasin Area.",
+      "target_category": "mirror",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Washbasin Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        98
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 383,
+        "category": "mirror",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Lighting and Mirrors, expected Washbasin Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 98,
+        "frame_id": [
+          99,
+          137,
+          168,
+          198
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B1-0004",
+      "query_type": "B1_Area",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a mirror in the Lighting and Mirrors.",
+      "target_category": "mirror",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Lighting and Mirrors"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        383
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 98,
+        "category": "mirror",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Washbasin Area, expected Lighting and Mirrors"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 383,
+        "frame_id": [
+          782,
+          872,
+          925,
+          945
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B1-0005",
+      "query_type": "B1_Area",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a curtain in the Window and Curtain Area.",
+      "target_category": "curtain",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Window and Curtain Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        464,
+        465
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 426,
+        "category": "curtain",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Window Area, expected Window and Curtain Area"
+      },
+      {
+        "object_id": 427,
+        "category": "curtain",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Window Area, expected Window and Curtain Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 464,
+        "frame_id": [
+          772,
+          794,
+          830,
+          902
+        ]
+      },
+      {
+        "object_id": 465,
+        "frame_id": [
+          690,
+          800,
+          820
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B1-0006",
+      "query_type": "B1_Area",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a rug in the Floor Coverings.",
+      "target_category": "rug",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Floor Coverings"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        399
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 513,
+        "category": "rug",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Floor Coverings Area, expected Floor Coverings"
+      },
+      {
+        "object_id": 69,
+        "category": "rug",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Floor Coverings Area, expected Floor Coverings"
+      },
+      {
+        "object_id": 70,
+        "category": "rug",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Floor Coverings Area, expected Floor Coverings"
+      },
+      {
+        "object_id": 252,
+        "category": "rug",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Flooring and Ground Elements, expected Floor Coverings"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 399,
+        "frame_id": [
+          668,
+          777,
+          897,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B1-0007",
+      "query_type": "B1_Area",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a refrigerator in the Food Preparation Area.",
+      "target_category": "refrigerator",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Food Preparation Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        334
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 4,
+        "category": "refrigerator",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Food Storage Area, expected Food Preparation Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 334,
+        "frame_id": [
+          654,
+          879,
+          990,
+          1023,
+          1047
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B1-0008",
+      "query_type": "B1_Area",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a rack in the Seating and Relaxation Area.",
+      "target_category": "rack",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Seating and Relaxation Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        9
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 67,
+        "category": "rack",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Storage and Organization Area, expected Seating and Relaxation Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 9,
+        "frame_id": [
+          45,
+          75
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B1-0009",
+      "query_type": "B1_Area",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a dresser in the Storage and Organization Area.",
+      "target_category": "dresser",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Storage and Organization Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        5
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 419,
+        "category": "dresser",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Storage Area, expected Storage and Organization Area"
+      },
+      {
+        "object_id": 486,
+        "category": "dresser",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Storage Area, expected Storage and Organization Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 5,
+        "frame_id": [
+          96,
+          124,
+          413,
+          555
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B1-0010",
+      "query_type": "B1_Area",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a pillow in the Seating Area.",
+      "target_category": "pillow",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Seating Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        270,
+        272,
+        273
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 200,
+        "category": "pillow",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Sleeping Area, expected Seating Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 270,
+        "frame_id": [
+          970,
+          1061,
+          1081,
+          1121
+        ]
+      },
+      {
+        "object_id": 272,
+        "frame_id": [
+          1060,
+          1080,
+          1113
+        ]
+      },
+      {
+        "object_id": 273,
+        "frame_id": [
+          1060,
+          1080,
+          1112
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B1-0011",
+      "query_type": "B1_Area",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a shelf in the Storage Zone.",
+      "target_category": "shelf",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Storage Zone"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        123
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 183,
+        "category": "shelf",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Storage Area, expected Storage Zone"
+      },
+      {
+        "object_id": 357,
+        "category": "shelf",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Storage Area, expected Storage Zone"
+      },
+      {
+        "object_id": 7,
+        "category": "shelf",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Storage and Organization Area, expected Storage Zone"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 123,
+        "frame_id": [
+          126,
+          156,
+          241,
+          261,
+          300
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B1-0012",
+      "query_type": "B1_Area",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a refrigerator in the Food Storage Area.",
+      "target_category": "refrigerator",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Food Storage Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        4
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 334,
+        "category": "refrigerator",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Food Preparation Area, expected Food Storage Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 4,
+        "frame_id": [
+          2,
+          22,
+          111
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B1-0013",
+      "query_type": "B1_Area",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a dresser in the Storage Area.",
+      "target_category": "dresser",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Storage Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        419,
+        486
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 5,
+        "category": "dresser",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Storage and Organization Area, expected Storage Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 419,
+        "frame_id": [
+          698,
+          719,
+          745
+        ]
+      },
+      {
+        "object_id": 486,
+        "frame_id": [
+          772,
+          793,
+          837
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B1-0014",
+      "query_type": "B1_Area",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a washbasin in the Washbasin Area.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Washbasin Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        90,
+        386
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 113,
+        "category": "washbasin",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Washing Zone, expected Washbasin Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 90,
+        "frame_id": [
+          92,
+          137,
+          165,
+          195
+        ]
+      },
+      {
+        "object_id": 386,
+        "frame_id": [
+          780,
+          872,
+          917,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B2-0000",
+      "query_type": "B2_AreaRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a freezer near a refrigerator in the Food Storage Area.",
+      "target_category": "freezer",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Food Storage Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "refrigerator",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        2
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 3,
+        "category": "freezer",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "In Food Storage Area but not near refrigerator"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 2,
+        "frame_id": [
+          107,
+          127
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B2-0001",
+      "query_type": "B2_AreaRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a mirror near a washbasin counter in the Washbasin Area.",
+      "target_category": "mirror",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Washbasin Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "washbasin counter",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        98
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 383,
+        "category": "mirror",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Lighting and Mirrors, expected Washbasin Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 98,
+        "frame_id": [
+          99,
+          137,
+          168,
+          198
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B2-0002",
+      "query_type": "B2_AreaRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a bed on a bedframe in the Sleeping Area.",
+      "target_category": "bed",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Sleeping Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "anchor_category": "bedframe",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        417
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 199,
+        "category": "bed",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "In Sleeping Area but not on bedframe"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 417,
+        "frame_id": [
+          0,
+          43,
+          696,
+          718,
+          748
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B2-0003",
+      "query_type": "B2_AreaRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a couch near a pillow in the Seating Area.",
+      "target_category": "couch",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Seating Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "pillow",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        269
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 160,
+        "category": "couch",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "In Seating Area but not near pillow"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 269,
+        "frame_id": [
+          930,
+          969,
+          1061,
+          1081,
+          1117
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B2-0004",
+      "query_type": "B2_AreaRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a rack near a picture frame in the Seating and Relaxation Area.",
+      "target_category": "rack",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Seating and Relaxation Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "picture frame",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        9
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 67,
+        "category": "rack",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Storage and Organization Area, expected Seating and Relaxation Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 9,
+        "frame_id": [
+          45,
+          75
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B2-0005",
+      "query_type": "B2_AreaRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a washbasin near a laundry machine in the Washing Zone.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Washing Zone"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "laundry machine",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        113
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 90,
+        "category": "washbasin",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Washbasin Area, expected Washing Zone"
+      },
+      {
+        "object_id": 386,
+        "category": "washbasin",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Washbasin Area, expected Washing Zone"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 113,
+        "frame_id": [
+          266,
+          287,
+          543
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B2-0006",
+      "query_type": "B2_AreaRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a pillow near a blanket in the Seating Area.",
+      "target_category": "pillow",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Seating Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "blanket",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        270,
+        272,
+        273
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 200,
+        "category": "pillow",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Sleeping Area, expected Seating Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 270,
+        "frame_id": [
+          970,
+          1061,
+          1081,
+          1121
+        ]
+      },
+      {
+        "object_id": 272,
+        "frame_id": [
+          1060,
+          1080,
+          1113
+        ]
+      },
+      {
+        "object_id": 273,
+        "frame_id": [
+          1060,
+          1080,
+          1112
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B2-0007",
+      "query_type": "B2_AreaRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a mirror near a washbasin in the Washbasin Area.",
+      "target_category": "mirror",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Washbasin Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "washbasin",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        98
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 383,
+        "category": "mirror",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Lighting and Mirrors, expected Washbasin Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 98,
+        "frame_id": [
+          99,
+          137,
+          168,
+          198
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B2-0008",
+      "query_type": "B2_AreaRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a washbasin on a washbasin counter in the Washbasin Area.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Washbasin Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "anchor_category": "washbasin counter",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        90
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 386,
+        "category": "washbasin",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "In Washbasin Area but not on washbasin counter"
+      },
+      {
+        "object_id": 113,
+        "category": "washbasin",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Washing Zone, expected Washbasin Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 90,
+        "frame_id": [
+          92,
+          137,
+          165,
+          195
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B2-0009",
+      "query_type": "B2_AreaRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a dresser under a cloth in the Storage Area.",
+      "target_category": "dresser",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Storage Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "under",
+          "anchor_category": "cloth",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        419
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 486,
+        "category": "dresser",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "In Storage Area but not under cloth"
+      },
+      {
+        "object_id": 5,
+        "category": "dresser",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Storage and Organization Area, expected Storage Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 419,
+        "frame_id": [
+          698,
+          719,
+          745
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "B2-0010",
+      "query_type": "B2_AreaRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a pillow on a couch in the Seating Area.",
+      "target_category": "pillow",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Seating Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "anchor_category": "couch",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        270,
+        272,
+        273
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 200,
+        "category": "pillow",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Sleeping Area, expected Seating Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 270,
+        "frame_id": [
+          970,
+          1061,
+          1081,
+          1121
+        ]
+      },
+      {
+        "object_id": 272,
+        "frame_id": [
+          1060,
+          1080,
+          1113
+        ]
+      },
+      {
+        "object_id": 273,
+        "frame_id": [
+          1060,
+          1080,
+          1112
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0000",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a bed on a bedframe.",
+      "target_category": "bed",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "anchor_category": "bedframe",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        417
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 199,
+        "category": "bed",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is bed, but not on any bedframe"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 417,
+        "frame_id": [
+          0,
+          43,
+          696,
+          718,
+          748
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0001",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a laundry machine near a heater.",
+      "target_category": "laundry machine",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "heater",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        115
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 116,
+        "category": "laundry machine",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is laundry machine, but not near any heater"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 115,
+        "frame_id": [
+          105,
+          126,
+          194,
+          277,
+          535
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0002",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a washbasin near a shower curtain.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "shower curtain",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        386
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 90,
+        "category": "washbasin",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is washbasin, but not near any shower curtain"
+      },
+      {
+        "object_id": 113,
+        "category": "washbasin",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is washbasin, but not near any shower curtain"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 386,
+        "frame_id": [
+          780,
+          872,
+          917,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0003",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a mirror near a bathroom cabinet.",
+      "target_category": "mirror",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "bathroom cabinet",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        383
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 98,
+        "category": "mirror",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is mirror, but not near any bathroom cabinet"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 383,
+        "frame_id": [
+          782,
+          872,
+          925,
+          945
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0004",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a washbasin near a laundry machine.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "laundry machine",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        113
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 386,
+        "category": "washbasin",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is washbasin, but not near any laundry machine"
+      },
+      {
+        "object_id": 90,
+        "category": "washbasin",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is washbasin, but not near any laundry machine"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 113,
+        "frame_id": [
+          266,
+          287,
+          543
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0005",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a couch near a pillow.",
+      "target_category": "couch",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "pillow",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        269
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 160,
+        "category": "couch",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is couch, but not near any pillow"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 269,
+        "frame_id": [
+          930,
+          969,
+          1061,
+          1081,
+          1117
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0006",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a rack near a picture frame.",
+      "target_category": "rack",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "picture frame",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        9
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 67,
+        "category": "rack",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is rack, but not near any picture frame"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 9,
+        "frame_id": [
+          45,
+          75
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0007",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a towel on a toilet.",
+      "target_category": "towel",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "anchor_category": "toilet",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        88,
+        384
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 395,
+        "category": "towel",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is towel, but not on any toilet"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 88,
+        "frame_id": [
+          92,
+          165,
+          190
+        ]
+      },
+      {
+        "object_id": 384,
+        "frame_id": [
+          781,
+          872,
+          921
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0008",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a bathroom cabinet under a washbasin.",
+      "target_category": "bathroom cabinet",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "under",
+          "anchor_category": "washbasin",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        391
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 374,
+        "category": "bathroom cabinet",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is bathroom cabinet, but not under any washbasin"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 391,
+        "frame_id": [
+          780,
+          872,
+          917,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0009",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a rug under a shower curtain.",
+      "target_category": "rug",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "under",
+          "anchor_category": "shower curtain",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        399
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 70,
+        "category": "rug",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is rug, but not under any shower curtain"
+      },
+      {
+        "object_id": 252,
+        "category": "rug",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is rug, but not under any shower curtain"
+      },
+      {
+        "object_id": 513,
+        "category": "rug",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is rug, but not under any shower curtain"
+      },
+      {
+        "object_id": 69,
+        "category": "rug",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is rug, but not under any shower curtain"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 399,
+        "frame_id": [
+          668,
+          777,
+          897,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0010",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a refrigerator on a carpet.",
+      "target_category": "refrigerator",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "anchor_category": "carpet",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        4
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 334,
+        "category": "refrigerator",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is refrigerator, but not on any carpet"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 4,
+        "frame_id": [
+          2,
+          22,
+          111
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0011",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a freezer near a refrigerator.",
+      "target_category": "freezer",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "refrigerator",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        2
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 3,
+        "category": "freezer",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is freezer, but not near any refrigerator"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 2,
+        "frame_id": [
+          107,
+          127
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0012",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a bathroom cabinet near a shower curtain.",
+      "target_category": "bathroom cabinet",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "shower curtain",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        374
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 391,
+        "category": "bathroom cabinet",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is bathroom cabinet, but not near any shower curtain"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 374,
+        "frame_id": [
+          657,
+          840,
+          918,
+          1002,
+          1033
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0013",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a toilet near a bathroom cabinet.",
+      "target_category": "toilet",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "bathroom cabinet",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        379
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 86,
+        "category": "toilet",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is toilet, but not near any bathroom cabinet"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 379,
+        "frame_id": [
+          777,
+          840,
+          896,
+          916,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0014",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a freezer near a box.",
+      "target_category": "freezer",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "box",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        3
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 2,
+        "category": "freezer",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is freezer, but not near any box"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 3,
+        "frame_id": [
+          97,
+          120,
+          901
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C2-0000",
+      "query_type": "C2_ChainedRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a washbasin near a toilet which is near a bathroom cabinet.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "toilet",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "near",
+            "anchor_category": "bathroom cabinet",
+            "negate": false
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        386
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 90,
+        "category": "washbasin",
+        "fail_reason": "chain_mismatch",
+        "debug_info": "Found near toilet, but that neighbor has no near bathroom cabinet"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 386,
+        "frame_id": [
+          780,
+          872,
+          917,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C2-0001",
+      "query_type": "C2_ChainedRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a towel near a mirror which is near a washbasin counter.",
+      "target_category": "towel",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "mirror",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "near",
+            "anchor_category": "washbasin counter",
+            "negate": false
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        88
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 384,
+        "category": "towel",
+        "fail_reason": "chain_mismatch",
+        "debug_info": "Found near mirror, but that neighbor has no near washbasin counter"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 88,
+        "frame_id": [
+          92,
+          165,
+          190
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C2-0002",
+      "query_type": "C2_ChainedRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a mirror near a washbasin which is on a washbasin counter.",
+      "target_category": "mirror",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "washbasin",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "on",
+            "anchor_category": "washbasin counter",
+            "negate": false
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        98
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 383,
+        "category": "mirror",
+        "fail_reason": "chain_mismatch",
+        "debug_info": "Found near washbasin, but that neighbor has no on washbasin counter"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 98,
+        "frame_id": [
+          99,
+          137,
+          168,
+          198
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C2-0003",
+      "query_type": "C2_ChainedRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a washbasin near a toilet which is near a shower curtain.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "toilet",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "near",
+            "anchor_category": "shower curtain",
+            "negate": false
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        386
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 90,
+        "category": "washbasin",
+        "fail_reason": "chain_mismatch",
+        "debug_info": "Found near toilet, but that neighbor has no near shower curtain"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 386,
+        "frame_id": [
+          780,
+          872,
+          917,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D1-0000",
+      "query_type": "D1_NegRoom",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a dresser not in the bedroom.",
+      "target_category": "dresser",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "bedroom"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        486,
+        5
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 419,
+        "category": "dresser",
+        "fail_reason": "negation_violation",
+        "debug_info": "In bedroom (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 486,
+        "frame_id": [
+          772,
+          793,
+          837
+        ]
+      },
+      {
+        "object_id": 5,
+        "frame_id": [
+          96,
+          124,
+          413,
+          555
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D1-0001",
+      "query_type": "D1_NegRoom",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a rug not in the basement.",
+      "target_category": "rug",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "basement"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        399,
+        252
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 69,
+        "category": "rug",
+        "fail_reason": "negation_violation",
+        "debug_info": "In basement (excluded)"
+      },
+      {
+        "object_id": 70,
+        "category": "rug",
+        "fail_reason": "negation_violation",
+        "debug_info": "In basement (excluded)"
+      },
+      {
+        "object_id": 513,
+        "category": "rug",
+        "fail_reason": "negation_violation",
+        "debug_info": "In basement (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 399,
+        "frame_id": [
+          668,
+          777,
+          897,
+          937
+        ]
+      },
+      {
+        "object_id": 252,
+        "frame_id": [
+          214,
+          234,
+          592
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D1-0002",
+      "query_type": "D1_NegRoom",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a curtain not in the bedroom.",
+      "target_category": "curtain",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "bedroom"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        464,
+        465
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 427,
+        "category": "curtain",
+        "fail_reason": "negation_violation",
+        "debug_info": "In bedroom (excluded)"
+      },
+      {
+        "object_id": 426,
+        "category": "curtain",
+        "fail_reason": "negation_violation",
+        "debug_info": "In bedroom (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 464,
+        "frame_id": [
+          772,
+          794,
+          830,
+          902
+        ]
+      },
+      {
+        "object_id": 465,
+        "frame_id": [
+          690,
+          800,
+          820
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D1-0003",
+      "query_type": "D1_NegRoom",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a washbasin not in the bathroom.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "bathroom"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        113
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 386,
+        "category": "washbasin",
+        "fail_reason": "negation_violation",
+        "debug_info": "In bathroom (excluded)"
+      },
+      {
+        "object_id": 90,
+        "category": "washbasin",
+        "fail_reason": "negation_violation",
+        "debug_info": "In bathroom (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 113,
+        "frame_id": [
+          266,
+          287,
+          543
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D1-0004",
+      "query_type": "D1_NegRoom",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a curtain not in the office.",
+      "target_category": "curtain",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "office"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        426,
+        427
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 465,
+        "category": "curtain",
+        "fail_reason": "negation_violation",
+        "debug_info": "In office (excluded)"
+      },
+      {
+        "object_id": 464,
+        "category": "curtain",
+        "fail_reason": "negation_violation",
+        "debug_info": "In office (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 426,
+        "frame_id": [
+          0,
+          45,
+          722,
+          742
+        ]
+      },
+      {
+        "object_id": 427,
+        "frame_id": [
+          45,
+          713,
+          735,
+          857
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D1-0005",
+      "query_type": "D1_NegRoom",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a refrigerator not in the basement.",
+      "target_category": "refrigerator",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "basement"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        334
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 4,
+        "category": "refrigerator",
+        "fail_reason": "negation_violation",
+        "debug_info": "In basement (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 334,
+        "frame_id": [
+          654,
+          879,
+          990,
+          1023,
+          1047
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D1-0006",
+      "query_type": "D1_NegRoom",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a shelf not in the basement.",
+      "target_category": "shelf",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "basement"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        183,
+        357,
+        123
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 7,
+        "category": "shelf",
+        "fail_reason": "negation_violation",
+        "debug_info": "In basement (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 183,
+        "frame_id": [
+          462
+        ]
+      },
+      {
+        "object_id": 357,
+        "frame_id": [
+          654,
+          974,
+          994,
+          1033
+        ]
+      },
+      {
+        "object_id": 123,
+        "frame_id": [
+          126,
+          156,
+          241,
+          261,
+          300
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D1-0007",
+      "query_type": "D1_NegRoom",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a shelf not in the kitchen.",
+      "target_category": "shelf",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "kitchen"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        183,
+        7,
+        123
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 357,
+        "category": "shelf",
+        "fail_reason": "negation_violation",
+        "debug_info": "In kitchen (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 183,
+        "frame_id": [
+          462
+        ]
+      },
+      {
+        "object_id": 7,
+        "frame_id": [
+          101,
+          121,
+          901
+        ]
+      },
+      {
+        "object_id": 123,
+        "frame_id": [
+          126,
+          156,
+          241,
+          261,
+          300
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D1-0008",
+      "query_type": "D1_NegRoom",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a washbasin not in the laundry room.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "laundry room"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        90,
+        386
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 113,
+        "category": "washbasin",
+        "fail_reason": "negation_violation",
+        "debug_info": "In laundry room (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 90,
+        "frame_id": [
+          92,
+          137,
+          165,
+          195
+        ]
+      },
+      {
+        "object_id": 386,
+        "frame_id": [
+          780,
+          872,
+          917,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D1-0009",
+      "query_type": "D1_NegRoom",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a pillow not in the bedroom.",
+      "target_category": "pillow",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "bedroom"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        270,
+        272,
+        273
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 200,
+        "category": "pillow",
+        "fail_reason": "negation_violation",
+        "debug_info": "In bedroom (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 270,
+        "frame_id": [
+          970,
+          1061,
+          1081,
+          1121
+        ]
+      },
+      {
+        "object_id": 272,
+        "frame_id": [
+          1060,
+          1080,
+          1113
+        ]
+      },
+      {
+        "object_id": 273,
+        "frame_id": [
+          1060,
+          1080,
+          1112
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D1-0010",
+      "query_type": "D1_NegRoom",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a rug not in the entryway.",
+      "target_category": "rug",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "entryway"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        399,
+        513,
+        69,
+        70
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 252,
+        "category": "rug",
+        "fail_reason": "negation_violation",
+        "debug_info": "In entryway (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 399,
+        "frame_id": [
+          668,
+          777,
+          897,
+          937
+        ]
+      },
+      {
+        "object_id": 513,
+        "frame_id": [
+          5,
+          45,
+          65,
+          216
+        ]
+      },
+      {
+        "object_id": 69,
+        "frame_id": [
+          4,
+          45,
+          216
+        ]
+      },
+      {
+        "object_id": 70,
+        "frame_id": [
+          4,
+          45,
+          65,
+          216
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D1-0011",
+      "query_type": "D1_NegRoom",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a shelf not in the bedroom.",
+      "target_category": "shelf",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "bedroom"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        357,
+        7,
+        123
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 183,
+        "category": "shelf",
+        "fail_reason": "negation_violation",
+        "debug_info": "In bedroom (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 357,
+        "frame_id": [
+          654,
+          974,
+          994,
+          1033
+        ]
+      },
+      {
+        "object_id": 7,
+        "frame_id": [
+          101,
+          121,
+          901
+        ]
+      },
+      {
+        "object_id": 123,
+        "frame_id": [
+          126,
+          156,
+          241,
+          261,
+          300
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D2-0000",
+      "query_type": "D2_NegBinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a shelf not on any sink cabinet.",
+      "target_category": "shelf",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "anchor_category": "sink cabinet",
+          "negate": true,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        183,
+        7,
+        123
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 357,
+        "category": "shelf",
+        "fail_reason": "negation_violation",
+        "debug_info": "Is shelf and IS on sink cabinet (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 183,
+        "frame_id": [
+          462
+        ]
+      },
+      {
+        "object_id": 7,
+        "frame_id": [
+          101,
+          121,
+          901
+        ]
+      },
+      {
+        "object_id": 123,
+        "frame_id": [
+          126,
+          156,
+          241,
+          261,
+          300
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D2-0001",
+      "query_type": "D2_NegBinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a shelf not near any sink.",
+      "target_category": "shelf",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "sink",
+          "negate": true,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        183,
+        7,
+        123
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 357,
+        "category": "shelf",
+        "fail_reason": "negation_violation",
+        "debug_info": "Is shelf and IS near sink (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 183,
+        "frame_id": [
+          462
+        ]
+      },
+      {
+        "object_id": 7,
+        "frame_id": [
+          101,
+          121,
+          901
+        ]
+      },
+      {
+        "object_id": 123,
+        "frame_id": [
+          126,
+          156,
+          241,
+          261,
+          300
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D2-0002",
+      "query_type": "D2_NegBinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a bathroom cabinet not near any shower curtain.",
+      "target_category": "bathroom cabinet",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "shower curtain",
+          "negate": true,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        391
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 374,
+        "category": "bathroom cabinet",
+        "fail_reason": "negation_violation",
+        "debug_info": "Is bathroom cabinet and IS near shower curtain (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 391,
+        "frame_id": [
+          780,
+          872,
+          917,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D2-0003",
+      "query_type": "D2_NegBinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a dining chair not near any window shutters.",
+      "target_category": "dining chair",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "window shutters",
+          "negate": true,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        299,
+        300,
+        302
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 301,
+        "category": "dining chair",
+        "fail_reason": "negation_violation",
+        "debug_info": "Is dining chair and IS near window shutters (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 299,
+        "frame_id": [
+          542,
+          654,
+          881,
+          977,
+          998
+        ]
+      },
+      {
+        "object_id": 300,
+        "frame_id": [
+          319,
+          437,
+          655,
+          881,
+          1003
+        ]
+      },
+      {
+        "object_id": 302,
+        "frame_id": [
+          543,
+          654,
+          977,
+          1005
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D2-0004",
+      "query_type": "D2_NegBinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a couch not near any pillow.",
+      "target_category": "couch",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "pillow",
+          "negate": true,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        160
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 269,
+        "category": "couch",
+        "fail_reason": "negation_violation",
+        "debug_info": "Is couch and IS near pillow (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 160,
+        "frame_id": [
+          140,
+          160,
+          242,
+          350,
+          371
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D2-0005",
+      "query_type": "D2_NegBinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a bed not on any bedframe.",
+      "target_category": "bed",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "anchor_category": "bedframe",
+          "negate": true,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        199
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 417,
+        "category": "bed",
+        "fail_reason": "negation_violation",
+        "debug_info": "Is bed and IS on bedframe (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 199,
+        "frame_id": [
+          238,
+          327,
+          453,
+          473,
+          501
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D2-0006",
+      "query_type": "D2_NegBinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a towel not near any trash can.",
+      "target_category": "towel",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "trash can",
+          "negate": true,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        88,
+        395
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 384,
+        "category": "towel",
+        "fail_reason": "negation_violation",
+        "debug_info": "Is towel and IS near trash can (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 88,
+        "frame_id": [
+          92,
+          165,
+          190
+        ]
+      },
+      {
+        "object_id": 395,
+        "frame_id": [
+          840,
+          900
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D2-0007",
+      "query_type": "D2_NegBinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a pillow not on any bed.",
+      "target_category": "pillow",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "anchor_category": "bed",
+          "negate": true,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        270,
+        272,
+        273
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 200,
+        "category": "pillow",
+        "fail_reason": "negation_violation",
+        "debug_info": "Is pillow and IS on bed (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 270,
+        "frame_id": [
+          970,
+          1061,
+          1081,
+          1121
+        ]
+      },
+      {
+        "object_id": 272,
+        "frame_id": [
+          1060,
+          1080,
+          1113
+        ]
+      },
+      {
+        "object_id": 273,
+        "frame_id": [
+          1060,
+          1080,
+          1112
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D2-0008",
+      "query_type": "D2_NegBinaryRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a laundry machine not near any heater.",
+      "target_category": "laundry machine",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "heater",
+          "negate": true,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        116
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 115,
+        "category": "laundry machine",
+        "fail_reason": "negation_violation",
+        "debug_info": "Is laundry machine and IS near heater (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 116,
+        "frame_id": [
+          280,
+          535
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D3-0000",
+      "query_type": "D3_NegChainedRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a toilet near a washbasin that is not on any washbasin counter.",
+      "target_category": "toilet",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "washbasin",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "on",
+            "anchor_category": "washbasin counter",
+            "negate": true
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        379
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 86,
+        "category": "toilet",
+        "fail_reason": "negation_violation",
+        "debug_info": "Has near washbasin which IS on washbasin counter (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 379,
+        "frame_id": [
+          777,
+          840,
+          896,
+          916,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D3-0001",
+      "query_type": "D3_NegChainedRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a toilet near a mirror that is not near any washbasin counter.",
+      "target_category": "toilet",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "mirror",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "near",
+            "anchor_category": "washbasin counter",
+            "negate": true
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        379
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 86,
+        "category": "toilet",
+        "fail_reason": "negation_violation",
+        "debug_info": "Has near mirror which IS near washbasin counter (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 379,
+        "frame_id": [
+          777,
+          840,
+          896,
+          916,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D3-0002",
+      "query_type": "D3_NegChainedRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a towel near a toilet that is not near any bathroom cabinet.",
+      "target_category": "towel",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "toilet",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "near",
+            "anchor_category": "bathroom cabinet",
+            "negate": true
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        88
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 395,
+        "category": "towel",
+        "fail_reason": "negation_violation",
+        "debug_info": "Has near toilet which IS near bathroom cabinet (should not be)"
+      },
+      {
+        "object_id": 384,
+        "category": "towel",
+        "fail_reason": "negation_violation",
+        "debug_info": "Has near toilet which IS near bathroom cabinet (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 88,
+        "frame_id": [
+          92,
+          165,
+          190
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D3-0003",
+      "query_type": "D3_NegChainedRelation",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a towel near a toilet that is not near any shower curtain.",
+      "target_category": "towel",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "toilet",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "near",
+            "anchor_category": "shower curtain",
+            "negate": true
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        88
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 384,
+        "category": "towel",
+        "fail_reason": "negation_violation",
+        "debug_info": "Has near toilet which IS near shower curtain (should not be)"
+      },
+      {
+        "object_id": 395,
+        "category": "towel",
+        "fail_reason": "negation_violation",
+        "debug_info": "Has near toilet which IS near shower curtain (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 88,
+        "frame_id": [
+          92,
+          165,
+          190
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D4-0000",
+      "query_type": "D4_Negation_Description",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a washbasin that is not made of stone on floor 0.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          0
+        ]
+      },
+      "negation_attributes": {
+        "type": "material",
+        "negated_value": "stone",
+        "filtering_method": "group_based_exclusion",
+        "gt_attributes": [
+          {
+            "oid": 113,
+            "actual_value": "plastic"
+          }
+        ]
+      }
+    },
+    "ground_truth": {
+      "object_ids": [
+        113
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 90,
+        "category": "washbasin",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'stone'."
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 113,
+        "frame_id": [
+          266,
+          287,
+          543
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D4-0001",
+      "query_type": "D4_Negation_Description",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a washbasin that is not made of plastic on floor 0.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          0
+        ]
+      },
+      "negation_attributes": {
+        "type": "material",
+        "negated_value": "plastic",
+        "filtering_method": "group_based_exclusion",
+        "gt_attributes": [
+          {
+            "oid": 90,
+            "actual_value": "stone"
+          }
+        ]
+      }
+    },
+    "ground_truth": {
+      "object_ids": [
+        90
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 113,
+        "category": "washbasin",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'plastic'."
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 90,
+        "frame_id": [
+          92,
+          137,
+          165,
+          195
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D5-0000",
+      "query_type": "D5_NegatedAnchorAttribute",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a mirror near a not grey towel.",
+      "target_category": "mirror",
+      "target_attributes": []
+    },
+    "constraints": {
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "towel",
+          "negate": false,
+          "anchor_constraints": {
+            "negation_attributes": {
+              "type": "color",
+              "negated_value": "grey",
+              "filtering_method": "group_based_exclusion"
+            }
+          }
+        }
+      ],
+      "gt_anchor_details": [
+        {
+          "target_id": 98,
+          "valid_anchors": [
+            {
+              "anchor_id": 88,
+              "actual_value": "blue"
+            }
+          ]
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        98
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 383,
+        "category": "mirror",
+        "fail_reason": "anchor_has_negated_attribute",
+        "debug_info": "Spatial relation exists, but anchor matches negated attribute: Anchor(384) is 'grey'"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 98,
+        "frame_id": [
+          99,
+          137,
+          168,
+          198
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "ABCD-0000",
+      "query_type": "ABCD_Complex",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a toilet in the Toilet Area of the bathroom, near a washbasin which is not on any washbasin counter.",
+      "target_category": "toilet",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "bathroom"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Toilet Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "washbasin",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "on",
+            "anchor_category": "washbasin counter",
+            "negate": true
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        379
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 86,
+        "category": "toilet",
+        "fail_reason": "negation_violation",
+        "debug_info": "In Toilet Area, near washbasin which IS on washbasin counter (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 379,
+        "frame_id": [
+          777,
+          840,
+          896,
+          916,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0000",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a white toilet made of stone in the floor 1.",
+      "target_category": "toilet",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          1
+        ]
+      },
+      "target_attributes": {
+        "color": "white",
+        "material": "stone",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        379
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 86,
+        "category": "toilet",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (white, stone), but Floor 0 != 1"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 379,
+        "frame_id": [
+          777,
+          840,
+          896,
+          916,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0001",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a blue towel made of fabric in the floor 0.",
+      "target_category": "towel",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          0
+        ]
+      },
+      "target_attributes": {
+        "color": "blue",
+        "material": "fabric",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        88
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 395,
+        "category": "towel",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (blue, fabric), but Floor 1 != 0"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 88,
+        "frame_id": [
+          92,
+          165,
+          190
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0002",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a white washbasin made of stone in the floor 1.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          1
+        ]
+      },
+      "target_attributes": {
+        "color": "white",
+        "material": "stone",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        386
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 90,
+        "category": "washbasin",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (white, stone), but Floor 0 != 1"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 386,
+        "frame_id": [
+          780,
+          872,
+          917,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0003",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a white washbasin made of plastic in the floor 0.",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          0
+        ]
+      },
+      "target_attributes": {
+        "color": "white",
+        "material": "plastic",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        113
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 90,
+        "category": "washbasin",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Mat: 'stone' vs 'plastic'"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 113,
+        "frame_id": [
+          266,
+          287,
+          543
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0004",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a brown dresser made of wood in the floor 1.",
+      "target_category": "dresser",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          1
+        ]
+      },
+      "target_attributes": {
+        "color": "brown",
+        "material": "wood",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        419,
+        486
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 5,
+        "category": "dresser",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (brown, wood), but Floor 0 != 1"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 419,
+        "frame_id": [
+          698,
+          719,
+          745
+        ]
+      },
+      {
+        "object_id": 486,
+        "frame_id": [
+          772,
+          793,
+          837
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0005",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a grey mirror made of glass in the floor 0.",
+      "target_category": "mirror",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          0
+        ]
+      },
+      "target_attributes": {
+        "color": "grey",
+        "material": "glass",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        98
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 383,
+        "category": "mirror",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (grey, glass), but Floor 1 != 0"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 98,
+        "frame_id": [
+          99,
+          137,
+          168,
+          198
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E2-0000",
+      "query_type": "E2_Relation_AnchorAttribute",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a mirror near a grey towel made of fabric.",
+      "target_category": "mirror",
+      "target_attributes": []
+    },
+    "constraints": {
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "towel",
+          "negate": false,
+          "anchor_constraints": {
+            "target_attributes": {
+              "color": "grey",
+              "material": "fabric",
+              "matching_method": "exact_atomic_match"
+            }
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        383
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 98,
+        "category": "mirror",
+        "fail_reason": "anchor_attribute_mismatch",
+        "debug_info": "Attributes mismatch. [Anchor(88): blue/fabric vs Target: grey/fabric]"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 383,
+        "frame_id": [
+          782,
+          872,
+          925,
+          945
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0000",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Can you grab the mirror that's by the washbasin counter in the Washbasin Area?",
+      "target_category": "mirror",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Washbasin Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "washbasin counter",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        98
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 383,
+        "category": "mirror",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Lighting and Mirrors, expected Washbasin Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 98,
+        "frame_id": [
+          99,
+          137,
+          168,
+          198
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0001",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Can you grab a mirror that's close to a towel that's not grey?",
+      "target_category": "mirror",
+      "target_attributes": []
+    },
+    "constraints": {
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "towel",
+          "negate": false,
+          "anchor_constraints": {
+            "negation_attributes": {
+              "type": "color",
+              "negated_value": "grey",
+              "filtering_method": "group_based_exclusion"
+            }
+          }
+        }
+      ],
+      "gt_anchor_details": [
+        {
+          "target_id": 98,
+          "valid_anchors": [
+            {
+              "anchor_id": 88,
+              "actual_value": "blue"
+            }
+          ]
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        98
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 383,
+        "category": "mirror",
+        "fail_reason": "anchor_has_negated_attribute",
+        "debug_info": "Spatial relation exists, but anchor matches negated attribute: Anchor(384) is 'grey'"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 98,
+        "frame_id": [
+          99,
+          137,
+          168,
+          198
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0002",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you look for a dresser in the Storage and Organization Area?",
+      "target_category": "dresser",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Storage and Organization Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        5
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 419,
+        "category": "dresser",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Storage Area, expected Storage and Organization Area"
+      },
+      {
+        "object_id": 486,
+        "category": "dresser",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Storage Area, expected Storage and Organization Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 5,
+        "frame_id": [
+          96,
+          124,
+          413,
+          555
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0003",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Can you look for a washbasin that's not in the laundry room?",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "laundry room"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        90,
+        386
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 113,
+        "category": "washbasin",
+        "fail_reason": "negation_violation",
+        "debug_info": "In laundry room (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 90,
+        "frame_id": [
+          92,
+          137,
+          165,
+          195
+        ]
+      },
+      {
+        "object_id": 386,
+        "frame_id": [
+          780,
+          872,
+          917,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0004",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you locate a refrigerator in the Food Storage Area for me?",
+      "target_category": "refrigerator",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Food Storage Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        4
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 334,
+        "category": "refrigerator",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Food Preparation Area, expected Food Storage Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 4,
+        "frame_id": [
+          2,
+          22,
+          111
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0005",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you grab a pillow from somewhere outside the bedroom?",
+      "target_category": "pillow",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "bedroom"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        270,
+        272,
+        273
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 200,
+        "category": "pillow",
+        "fail_reason": "negation_violation",
+        "debug_info": "In bedroom (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 270,
+        "frame_id": [
+          970,
+          1061,
+          1081,
+          1121
+        ]
+      },
+      {
+        "object_id": 272,
+        "frame_id": [
+          1060,
+          1080,
+          1113
+        ]
+      },
+      {
+        "object_id": 273,
+        "frame_id": [
+          1060,
+          1080,
+          1112
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0006",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Can you look for a stone white toilet somewhere on the first floor?",
+      "target_category": "toilet",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          1
+        ]
+      },
+      "target_attributes": {
+        "color": "white",
+        "material": "stone",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        379
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 86,
+        "category": "toilet",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (white, stone), but Floor 0 != 1"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 379,
+        "frame_id": [
+          777,
+          840,
+          896,
+          916,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0007",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you grab a curtain from the bedroom for me?",
+      "target_category": "curtain",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "bedroom"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        426,
+        427
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 465,
+        "category": "curtain",
+        "fail_reason": "wrong_room",
+        "debug_info": "In office, expected bedroom"
+      },
+      {
+        "object_id": 464,
+        "category": "curtain",
+        "fail_reason": "wrong_room",
+        "debug_info": "In office, expected bedroom"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 426,
+        "frame_id": [
+          0,
+          45,
+          722,
+          742
+        ]
+      },
+      {
+        "object_id": 427,
+        "frame_id": [
+          45,
+          713,
+          735,
+          857
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0008",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Can you look for a white stone washbasin on the first floor?",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          1
+        ]
+      },
+      "target_attributes": {
+        "color": "white",
+        "material": "stone",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        386
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 90,
+        "category": "washbasin",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (white, stone), but Floor 0 != 1"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 386,
+        "frame_id": [
+          780,
+          872,
+          917,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0009",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you grab a pillow that's near a blanket in the Seating Area?",
+      "target_category": "pillow",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Seating Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "blanket",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        270,
+        272,
+        273
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 200,
+        "category": "pillow",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Sleeping Area, expected Seating Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 270,
+        "frame_id": [
+          970,
+          1061,
+          1081,
+          1121
+        ]
+      },
+      {
+        "object_id": 272,
+        "frame_id": [
+          1060,
+          1080,
+          1113
+        ]
+      },
+      {
+        "object_id": 273,
+        "frame_id": [
+          1060,
+          1080,
+          1112
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0010",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Can you look for a shelf that's not in the bedroom?",
+      "target_category": "shelf",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "bedroom"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        357,
+        7,
+        123
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 183,
+        "category": "shelf",
+        "fail_reason": "negation_violation",
+        "debug_info": "In bedroom (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 357,
+        "frame_id": [
+          654,
+          974,
+          994,
+          1033
+        ]
+      },
+      {
+        "object_id": 7,
+        "frame_id": [
+          101,
+          121,
+          901
+        ]
+      },
+      {
+        "object_id": 123,
+        "frame_id": [
+          126,
+          156,
+          241,
+          261,
+          300
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0011",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you look for a curtain that's not in the bedroom?",
+      "target_category": "curtain",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "bedroom"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        464,
+        465
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 427,
+        "category": "curtain",
+        "fail_reason": "negation_violation",
+        "debug_info": "In bedroom (excluded)"
+      },
+      {
+        "object_id": 426,
+        "category": "curtain",
+        "fail_reason": "negation_violation",
+        "debug_info": "In bedroom (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 464,
+        "frame_id": [
+          772,
+          794,
+          830,
+          902
+        ]
+      },
+      {
+        "object_id": 465,
+        "frame_id": [
+          690,
+          800,
+          820
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0012",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you grab a pillow that's not on a bed?",
+      "target_category": "pillow",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "anchor_category": "bed",
+          "negate": true,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        270,
+        272,
+        273
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 200,
+        "category": "pillow",
+        "fail_reason": "negation_violation",
+        "debug_info": "Is pillow and IS on bed (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 270,
+        "frame_id": [
+          970,
+          1061,
+          1081,
+          1121
+        ]
+      },
+      {
+        "object_id": 272,
+        "frame_id": [
+          1060,
+          1080,
+          1113
+        ]
+      },
+      {
+        "object_id": 273,
+        "frame_id": [
+          1060,
+          1080,
+          1112
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0013",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you grab a mirror from the Lighting and Mirrors section?",
+      "target_category": "mirror",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Lighting and Mirrors"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        383
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 98,
+        "category": "mirror",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Washbasin Area, expected Lighting and Mirrors"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 383,
+        "frame_id": [
+          782,
+          872,
+          925,
+          945
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0014",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you look for a laundry machine that's close to a heater?",
+      "target_category": "laundry machine",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "heater",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        115
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 116,
+        "category": "laundry machine",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is laundry machine, but not near any heater"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 115,
+        "frame_id": [
+          105,
+          126,
+          194,
+          277,
+          535
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0015",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you look for a freezer that's close to a box?",
+      "target_category": "freezer",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "box",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        3
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 2,
+        "category": "freezer",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is freezer, but not near any box"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 3,
+        "frame_id": [
+          97,
+          120,
+          901
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0016",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you look for a rug that's under the shower curtain?",
+      "target_category": "rug",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "under",
+          "anchor_category": "shower curtain",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        399
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 70,
+        "category": "rug",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is rug, but not under any shower curtain"
+      },
+      {
+        "object_id": 252,
+        "category": "rug",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is rug, but not under any shower curtain"
+      },
+      {
+        "object_id": 513,
+        "category": "rug",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is rug, but not under any shower curtain"
+      },
+      {
+        "object_id": 69,
+        "category": "rug",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is rug, but not under any shower curtain"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 399,
+        "frame_id": [
+          668,
+          777,
+          897,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0017",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Can you look for a refrigerator that's not down in the basement?",
+      "target_category": "refrigerator",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "basement"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        334
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 4,
+        "category": "refrigerator",
+        "fail_reason": "negation_violation",
+        "debug_info": "In basement (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 334,
+        "frame_id": [
+          654,
+          879,
+          990,
+          1023,
+          1047
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0018",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you grab a rug from the Floor Coverings section?",
+      "target_category": "rug",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Floor Coverings"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        399
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 513,
+        "category": "rug",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Floor Coverings Area, expected Floor Coverings"
+      },
+      {
+        "object_id": 69,
+        "category": "rug",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Floor Coverings Area, expected Floor Coverings"
+      },
+      {
+        "object_id": 70,
+        "category": "rug",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Floor Coverings Area, expected Floor Coverings"
+      },
+      {
+        "object_id": 252,
+        "category": "rug",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Flooring and Ground Elements, expected Floor Coverings"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 399,
+        "frame_id": [
+          668,
+          777,
+          897,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0019",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you look for a freezer that's close to a refrigerator in the Food Storage Area?",
+      "target_category": "freezer",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Food Storage Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "refrigerator",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        2
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 3,
+        "category": "freezer",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "In Food Storage Area but not near refrigerator"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 2,
+        "frame_id": [
+          107,
+          127
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0020",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you grab a pillow from the seating area for me?",
+      "target_category": "pillow",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Seating Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        270,
+        272,
+        273
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 200,
+        "category": "pillow",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Sleeping Area, expected Seating Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 270,
+        "frame_id": [
+          970,
+          1061,
+          1081,
+          1121
+        ]
+      },
+      {
+        "object_id": 272,
+        "frame_id": [
+          1060,
+          1080,
+          1113
+        ]
+      },
+      {
+        "object_id": 273,
+        "frame_id": [
+          1060,
+          1080,
+          1112
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0021",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you look for a washbasin on the counter in the Washbasin Area?",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Washbasin Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "anchor_category": "washbasin counter",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        90
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 386,
+        "category": "washbasin",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "In Washbasin Area but not on washbasin counter"
+      },
+      {
+        "object_id": 113,
+        "category": "washbasin",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Washing Zone, expected Washbasin Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 90,
+        "frame_id": [
+          92,
+          137,
+          165,
+          195
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0022",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you look for a washbasin that's close to a shower curtain?",
+      "target_category": "washbasin",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "shower curtain",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        386
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 90,
+        "category": "washbasin",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is washbasin, but not near any shower curtain"
+      },
+      {
+        "object_id": 113,
+        "category": "washbasin",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is washbasin, but not near any shower curtain"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 386,
+        "frame_id": [
+          780,
+          872,
+          917,
+          937
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0023",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you look for a mirror that's close to a washbasin in the Washbasin Area?",
+      "target_category": "mirror",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [
+          "Washbasin Area"
+        ],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "washbasin",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        98
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 383,
+        "category": "mirror",
+        "fail_reason": "wrong_area",
+        "debug_info": "In Lighting and Mirrors, expected Washbasin Area"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 98,
+        "frame_id": [
+          99,
+          137,
+          168,
+          198
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0024",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Can you look for a rug that's not in the entryway?",
+      "target_category": "rug",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "entryway"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        399,
+        513,
+        69,
+        70
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 252,
+        "category": "rug",
+        "fail_reason": "negation_violation",
+        "debug_info": "In entryway (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 399,
+        "frame_id": [
+          668,
+          777,
+          897,
+          937
+        ]
+      },
+      {
+        "object_id": 513,
+        "frame_id": [
+          5,
+          45,
+          65,
+          216
+        ]
+      },
+      {
+        "object_id": 69,
+        "frame_id": [
+          4,
+          45,
+          216
+        ]
+      },
+      {
+        "object_id": 70,
+        "frame_id": [
+          4,
+          45,
+          65,
+          216
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0025",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you grab a towel that's on the toilet?",
+      "target_category": "towel",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "anchor_category": "toilet",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        88,
+        384
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 395,
+        "category": "towel",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is towel, but not on any toilet"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 88,
+        "frame_id": [
+          92,
+          165,
+          190
+        ]
+      },
+      {
+        "object_id": 384,
+        "frame_id": [
+          781,
+          872,
+          921
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0026",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00877-4ok3usBNeis",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you look for a dresser down in the basement?",
+      "target_category": "dresser",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "basement"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        5
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 419,
+        "category": "dresser",
+        "fail_reason": "wrong_room",
+        "debug_info": "In bedroom, expected basement"
+      },
+      {
+        "object_id": 486,
+        "category": "dresser",
+        "fail_reason": "wrong_room",
+        "debug_info": "In office, expected basement"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 5,
+        "frame_id": [
+          96,
+          124,
+          413,
+          555
+        ]
+      }
+    ]
+  }
+]

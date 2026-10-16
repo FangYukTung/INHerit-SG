@@ -1,0 +1,6 @@
+# Install the official torchmetrics_ext source separately (see docs/ADAPTERS.md).
+pandas
+pyarrow
+datasets
+huggingface-hub
+numpy

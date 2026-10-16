@@ -1,0 +1,47 @@
+retrieval:
+  target_threshold: 0.55
+  near_distance: 1.5
+  route_depth: 20
+  pool_size: 5
+  rrf_constant: 10.0
+  structured_weight: 1.0
+  target_weight: 0.5
+  full_query_weight: 0.35
+visual_reranking:
+  confidence: 0.8
+  budget: 5
+llm_config:
+  model_router:
+    endpoints:
+      vision:
+        model: qwen3-vl-flash
+        supports_vision: true
+        api_key_env: INHERIT_API_KEY
+        base_url_env: INHERIT_API_BASE
+        max_retries: 2
+        timeout_s: 60
+      text:
+        model: qwen3.6-flash
+        api_key_env: INHERIT_API_KEY
+        base_url_env: INHERIT_API_BASE
+        max_retries: 2
+        timeout_s: 60
+      rerank:
+        model: gemini-2.5-flash
+        supports_vision: true
+        api_key_env: INHERIT_API_KEY
+        base_url_env: INHERIT_API_BASE
+        max_retries: 2
+        timeout_s: 60
+    routing:
+      default: vision
+      leaf_description: vision
+      object_expansion: vision
+      scene_summary: vision
+      cluster_summary: text
+      tag_filtering: text
+      query_parsing: text
+      visual_reranking: rerank
+    runtime:
+      cache_dir: outputs/api-cache
+      usage_log: outputs/model-usage.jsonl

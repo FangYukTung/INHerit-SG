@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inherit-sg"
+version = "0.1.0"
+description = "Incremental hierarchical scene graphs for compositional object retrieval"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["numpy", "PyYAML", "networkx", "Pillow", "openai", "sentence-transformers"]
+
+[project.optional-dependencies]
+mapping = ["torch", "torchvision", "transformers", "opencv-python-headless", "scipy", "scikit-image", "scikit-learn", "matplotlib"]
+
+[project.urls]
+Repository = "https://github.com/FangYukTung/INHerit-SG"
+
+[project.scripts]
+inherit-sg = "inherit_sg.cli:main"
+
+[tool.setuptools]
+license-files = ["LICENSE", "licenses/*.txt"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

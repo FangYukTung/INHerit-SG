@@ -1,0 +1,2036 @@
+[
+  {
+    "meta": {
+      "query_id": "C1-0000",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a chair near a chair.",
+      "target_category": "chair",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "chair",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        152,
+        153,
+        158,
+        159,
+        59,
+        60
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 58,
+        "category": "chair",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is chair, but not near any chair"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 152,
+        "frame_id": [
+          727,
+          372,
+          726,
+          725
+        ]
+      },
+      {
+        "object_id": 153,
+        "frame_id": [
+          721,
+          371,
+          720,
+          724
+        ]
+      },
+      {
+        "object_id": 158,
+        "frame_id": [
+          364,
+          367,
+          363,
+          366
+        ]
+      },
+      {
+        "object_id": 159,
+        "frame_id": [
+          384,
+          379,
+          383,
+          385
+        ]
+      },
+      {
+        "object_id": 59,
+        "frame_id": [
+          454,
+          448,
+          449,
+          453
+        ]
+      },
+      {
+        "object_id": 60,
+        "frame_id": [
+          461,
+          462,
+          460,
+          463
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0007",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a stand near a model.",
+      "target_category": "stand",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "model",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        235
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 162,
+        "category": "stand",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is stand, but not near any model"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 235,
+        "frame_id": [
+          685,
+          292,
+          322,
+          678
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C2-0000",
+      "query_type": "C2_ChainedRelation",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a pedestal under a figure which is on a display.",
+      "target_category": "pedestal",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "under",
+          "anchor_category": "figure",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "on",
+            "anchor_category": "display",
+            "negate": false
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        6
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 24,
+        "category": "pedestal",
+        "fail_reason": "chain_mismatch",
+        "debug_info": "Found under figure, but that neighbor has no on display"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 6,
+        "frame_id": [
+          572,
+          600,
+          573,
+          564
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D2-0002",
+      "query_type": "D2_NegBinaryRelation",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a figure not on any display.",
+      "target_category": "figure",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "anchor_category": "display",
+          "negate": true,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        50
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 7,
+        "category": "figure",
+        "fail_reason": "negation_violation",
+        "debug_info": "Is figure and IS on display (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 50,
+        "frame_id": [
+          506,
+          611
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D4-0007",
+      "query_type": "D4_Negation_Description",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a stand that is not grey on floor 0.",
+      "target_category": "stand",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          0
+        ]
+      },
+      "negation_attributes": {
+        "type": "color",
+        "negated_value": "grey",
+        "filtering_method": "group_based_exclusion",
+        "gt_attributes": [
+          {
+            "oid": 235,
+            "actual_value": "yellow"
+          }
+        ]
+      }
+    },
+    "ground_truth": {
+      "object_ids": [
+        235
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 312,
+        "category": "stand",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'grey'."
+      },
+      {
+        "object_id": 309,
+        "category": "stand",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'grey'."
+      },
+      {
+        "object_id": 306,
+        "category": "stand",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'grey'."
+      },
+      {
+        "object_id": 311,
+        "category": "stand",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'grey'."
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 235,
+        "frame_id": [
+          685,
+          292,
+          322,
+          678
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D4-0011",
+      "query_type": "D4_Negation_Description",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a shelf that is not yellow on floor 0.",
+      "target_category": "shelf",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          0
+        ]
+      },
+      "negation_attributes": {
+        "type": "color",
+        "negated_value": "yellow",
+        "filtering_method": "group_based_exclusion",
+        "gt_attributes": [
+          {
+            "oid": 304,
+            "actual_value": "grey"
+          },
+          {
+            "oid": 279,
+            "actual_value": "grey"
+          }
+        ]
+      }
+    },
+    "ground_truth": {
+      "object_ids": [
+        304,
+        279
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 233,
+        "category": "shelf",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'yellow'."
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 304,
+        "frame_id": [
+          46,
+          66,
+          45,
+          44
+        ]
+      },
+      {
+        "object_id": 279,
+        "frame_id": [
+          102,
+          103,
+          101,
+          104
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D4-0013",
+      "query_type": "D4_Negation_Description",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a cloth that is not white on floor 0.",
+      "target_category": "cloth",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          0
+        ]
+      },
+      "negation_attributes": {
+        "type": "color",
+        "negated_value": "white",
+        "filtering_method": "group_based_exclusion",
+        "gt_attributes": [
+          {
+            "oid": 161,
+            "actual_value": "blue"
+          },
+          {
+            "oid": 207,
+            "actual_value": "red"
+          },
+          {
+            "oid": 177,
+            "actual_value": "red"
+          },
+          {
+            "oid": 250,
+            "actual_value": "red"
+          },
+          {
+            "oid": 251,
+            "actual_value": "red"
+          },
+          {
+            "oid": 252,
+            "actual_value": "red"
+          }
+        ]
+      }
+    },
+    "ground_truth": {
+      "object_ids": [
+        161,
+        207,
+        177,
+        250,
+        251,
+        252
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 249,
+        "category": "cloth",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'white'."
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 161,
+        "frame_id": [
+          715,
+          355,
+          195,
+          375
+        ]
+      },
+      {
+        "object_id": 207,
+        "frame_id": [
+          233,
+          232,
+          231,
+          230
+        ]
+      },
+      {
+        "object_id": 177,
+        "frame_id": [
+          686,
+          226,
+          750,
+          682
+        ]
+      },
+      {
+        "object_id": 250,
+        "frame_id": [
+          90,
+          812,
+          91,
+          89
+        ]
+      },
+      {
+        "object_id": 251,
+        "frame_id": [
+          812,
+          105,
+          813,
+          814
+        ]
+      },
+      {
+        "object_id": 252,
+        "frame_id": [
+          757,
+          814,
+          31,
+          756
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D5-0007",
+      "query_type": "D5_NegatedAnchorAttribute",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a picture near a picture not made of fabric.",
+      "target_category": "picture",
+      "target_attributes": []
+    },
+    "constraints": {
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "picture",
+          "negate": false,
+          "anchor_constraints": {
+            "negation_attributes": {
+              "type": "material",
+              "negated_value": "fabric",
+              "filtering_method": "group_based_exclusion"
+            }
+          }
+        }
+      ],
+      "gt_anchor_details": [
+        {
+          "target_id": 36,
+          "valid_anchors": [
+            {
+              "anchor_id": 37,
+              "actual_value": "wood"
+            },
+            {
+              "anchor_id": 431,
+              "actual_value": "wood"
+            }
+          ]
+        },
+        {
+          "target_id": 37,
+          "valid_anchors": [
+            {
+              "anchor_id": 36,
+              "actual_value": "wood"
+            },
+            {
+              "anchor_id": 431,
+              "actual_value": "wood"
+            }
+          ]
+        },
+        {
+          "target_id": 431,
+          "valid_anchors": [
+            {
+              "anchor_id": 36,
+              "actual_value": "wood"
+            },
+            {
+              "anchor_id": 37,
+              "actual_value": "wood"
+            }
+          ]
+        },
+        {
+          "target_id": 442,
+          "valid_anchors": [
+            {
+              "anchor_id": 240,
+              "actual_value": "wood"
+            }
+          ]
+        },
+        {
+          "target_id": 243,
+          "valid_anchors": [
+            {
+              "anchor_id": 439,
+              "actual_value": "wood"
+            }
+          ]
+        },
+        {
+          "target_id": 247,
+          "valid_anchors": [
+            {
+              "anchor_id": 240,
+              "actual_value": "wood"
+            },
+            {
+              "anchor_id": 441,
+              "actual_value": "wood"
+            }
+          ]
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        36,
+        37,
+        431,
+        243
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 439,
+        "category": "picture",
+        "fail_reason": "anchor_has_negated_attribute",
+        "debug_info": "Spatial relation exists, but anchor matches negated attribute: Anchor(243) is 'fabric'"
+      },
+      {
+        "object_id": 441,
+        "category": "picture",
+        "fail_reason": "anchor_has_negated_attribute",
+        "debug_info": "Spatial relation exists, but anchor matches negated attribute: Anchor(247) is 'fabric'"
+      },
+      {
+        "object_id": 18,
+        "category": "picture",
+        "fail_reason": "anchor_has_negated_attribute",
+        "debug_info": "Spatial relation exists, but anchor matches negated attribute: Anchor(20) is 'fabric'"
+      },
+      {
+        "object_id": 20,
+        "category": "picture",
+        "fail_reason": "anchor_has_negated_attribute",
+        "debug_info": "Spatial relation exists, but anchor matches negated attribute: Anchor(18) is 'fabric'"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 36,
+        "frame_id": [
+          394,
+          418,
+          492,
+          616
+        ]
+      },
+      {
+        "object_id": 37,
+        "frame_id": [
+          394,
+          418,
+          590,
+          611
+        ]
+      },
+      {
+        "object_id": 431,
+        "frame_id": [
+          394,
+          418,
+          611
+        ]
+      },
+      {
+        "object_id": 243,
+        "frame_id": [
+          87,
+          125,
+          732,
+          764,
+          794
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0001",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a blue cloth made of fabric in the floor 0.",
+      "target_category": "cloth",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          0
+        ]
+      },
+      "target_attributes": {
+        "color": "blue",
+        "material": "fabric",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        161
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 251,
+        "category": "cloth",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'red' vs 'blue'"
+      },
+      {
+        "object_id": 250,
+        "category": "cloth",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'red' vs 'blue'"
+      },
+      {
+        "object_id": 177,
+        "category": "cloth",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'red' vs 'blue'"
+      },
+      {
+        "object_id": 207,
+        "category": "cloth",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'red' vs 'blue'"
+      },
+      {
+        "object_id": 252,
+        "category": "cloth",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'red' vs 'blue'"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 161,
+        "frame_id": [
+          715,
+          355,
+          195,
+          375
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0003",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a grey shelf made of wood in the floor 0.",
+      "target_category": "shelf",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          0
+        ]
+      },
+      "target_attributes": {
+        "color": "grey",
+        "material": "wood",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        304
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 233,
+        "category": "shelf",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'yellow' vs 'grey'"
+      },
+      {
+        "object_id": 279,
+        "category": "shelf",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Mat: 'stone' vs 'wood'"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 304,
+        "frame_id": [
+          46,
+          66,
+          45,
+          44
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0004",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a multicolor picture made of wood in the floor 0.",
+      "target_category": "picture",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          0
+        ]
+      },
+      "target_attributes": {
+        "color": "multicolor",
+        "material": "wood",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        33,
+        36,
+        37,
+        431,
+        438,
+        439,
+        441,
+        442,
+        239,
+        241
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 238,
+        "category": "picture",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Mat: 'fabric' vs 'wood'"
+      },
+      {
+        "object_id": 18,
+        "category": "picture",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Mat: 'fabric' vs 'wood'"
+      },
+      {
+        "object_id": 242,
+        "category": "picture",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Mat: 'fabric' vs 'wood'"
+      },
+      {
+        "object_id": 2,
+        "category": "picture",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Mat: 'fabric' vs 'wood'"
+      },
+      {
+        "object_id": 262,
+        "category": "picture",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Mat: 'fabric' vs 'wood'"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 33,
+        "frame_id": [
+          455,
+          456,
+          454,
+          457
+        ]
+      },
+      {
+        "object_id": 36,
+        "frame_id": [
+          623,
+          429,
+          407,
+          622
+        ]
+      },
+      {
+        "object_id": 37,
+        "frame_id": [
+          430,
+          431
+        ]
+      },
+      {
+        "object_id": 431,
+        "frame_id": [
+          430
+        ]
+      },
+      {
+        "object_id": 438,
+        "frame_id": [
+          92,
+          91,
+          93,
+          94
+        ]
+      },
+      {
+        "object_id": 439,
+        "frame_id": [
+          131,
+          799,
+          130,
+          797
+        ]
+      },
+      {
+        "object_id": 441,
+        "frame_id": [
+          111,
+          131,
+          110,
+          126
+        ]
+      },
+      {
+        "object_id": 442,
+        "frame_id": [
+          108,
+          107,
+          106,
+          105
+        ]
+      },
+      {
+        "object_id": 239,
+        "frame_id": [
+          181,
+          2,
+          24,
+          180
+        ]
+      },
+      {
+        "object_id": 241,
+        "frame_id": [
+          173,
+          172,
+          171,
+          170
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0005",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a multicolor figure made of stone in the floor 0.",
+      "target_category": "figure",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          0
+        ]
+      },
+      "target_attributes": {
+        "color": "multicolor",
+        "material": "stone",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        7
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 25,
+        "category": "figure",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Mat: 'fabric' vs 'stone'"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 7,
+        "frame_id": [
+          581,
+          580,
+          579,
+          600
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0006",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a yellow stand made of metal in the floor 0.",
+      "target_category": "stand",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          0
+        ]
+      },
+      "target_attributes": {
+        "color": "yellow",
+        "material": "metal",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        235
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 311,
+        "category": "stand",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'grey' vs 'yellow'; Mat: 'stone' vs 'metal'"
+      },
+      {
+        "object_id": 162,
+        "category": "stand",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'black' vs 'yellow'; Mat: 'wood' vs 'metal'"
+      },
+      {
+        "object_id": 309,
+        "category": "stand",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'grey' vs 'yellow'; Mat: 'stone' vs 'metal'"
+      },
+      {
+        "object_id": 306,
+        "category": "stand",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'grey' vs 'yellow'; Mat: 'stone' vs 'metal'"
+      },
+      {
+        "object_id": 312,
+        "category": "stand",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'grey' vs 'yellow'; Mat: 'stone' vs 'metal'"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 235,
+        "frame_id": [
+          685,
+          292,
+          322,
+          678
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E2-0001",
+      "query_type": "E2_Relation_AnchorAttribute",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a cloth near a white cloth made of fabric.",
+      "target_category": "cloth",
+      "target_attributes": []
+    },
+    "constraints": {
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "cloth",
+          "negate": false,
+          "anchor_constraints": {
+            "target_attributes": {
+              "color": "white",
+              "material": "fabric",
+              "matching_method": "exact_atomic_match"
+            }
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        250,
+        251,
+        252
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 207,
+        "category": "cloth",
+        "fail_reason": "anchor_attribute_mismatch",
+        "debug_info": "Attributes mismatch. [Anchor(177): red/fabric vs Target: white/fabric]"
+      },
+      {
+        "object_id": 161,
+        "category": "cloth",
+        "fail_reason": "relation_missing",
+        "debug_info": "No cloth found via near"
+      },
+      {
+        "object_id": 177,
+        "category": "cloth",
+        "fail_reason": "anchor_attribute_mismatch",
+        "debug_info": "Attributes mismatch. [Anchor(207): red/fabric vs Target: white/fabric]"
+      },
+      {
+        "object_id": 249,
+        "category": "cloth",
+        "fail_reason": "anchor_attribute_mismatch",
+        "debug_info": "Attributes mismatch. [Anchor(250): red/fabric vs Target: white/fabric | Anchor(251): red/fabric vs Target: white/fabric | Anchor(252): red/fabric vs Target: white/fabric]"
+      },
+      {
+        "object_id": 176,
+        "category": "cloth",
+        "fail_reason": "relation_missing",
+        "debug_info": "No cloth found via near"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 250,
+        "frame_id": [
+          90,
+          812,
+          91,
+          89
+        ]
+      },
+      {
+        "object_id": 251,
+        "frame_id": [
+          812,
+          105,
+          813,
+          814
+        ]
+      },
+      {
+        "object_id": 252,
+        "frame_id": [
+          757,
+          814,
+          31,
+          756
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E2-0002",
+      "query_type": "E2_Relation_AnchorAttribute",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a pedestal under a multicolor figure made of stone.",
+      "target_category": "pedestal",
+      "target_attributes": []
+    },
+    "constraints": {
+      "spatial_relations": [
+        {
+          "relation": "under",
+          "anchor_category": "figure",
+          "negate": false,
+          "anchor_constraints": {
+            "target_attributes": {
+              "color": "multicolor",
+              "material": "stone",
+              "matching_method": "exact_atomic_match"
+            }
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        6
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 24,
+        "category": "pedestal",
+        "fail_reason": "anchor_attribute_mismatch",
+        "debug_info": "Attributes mismatch. [Anchor(25): multicolor/fabric vs Target: multicolor/stone]"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 6,
+        "frame_id": [
+          572,
+          600,
+          573,
+          564
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E2-0003",
+      "query_type": "E2_Relation_AnchorAttribute",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a picture near a multicolor picture made of wood.",
+      "target_category": "picture",
+      "target_attributes": []
+    },
+    "constraints": {
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "picture",
+          "negate": false,
+          "anchor_constraints": {
+            "target_attributes": {
+              "color": "multicolor",
+              "material": "wood",
+              "matching_method": "exact_atomic_match"
+            }
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        36,
+        37,
+        431,
+        240,
+        243
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 262,
+        "category": "picture",
+        "fail_reason": "relation_missing",
+        "debug_info": "No picture found via near"
+      },
+      {
+        "object_id": 242,
+        "category": "picture",
+        "fail_reason": "relation_missing",
+        "debug_info": "No picture found via near"
+      },
+      {
+        "object_id": 20,
+        "category": "picture",
+        "fail_reason": "anchor_attribute_mismatch",
+        "debug_info": "Attributes mismatch. [Anchor(18): multicolor/fabric vs Target: multicolor/wood]"
+      },
+      {
+        "object_id": 18,
+        "category": "picture",
+        "fail_reason": "anchor_attribute_mismatch",
+        "debug_info": "Attributes mismatch. [Anchor(20): multicolor/fabric vs Target: multicolor/wood]"
+      },
+      {
+        "object_id": 441,
+        "category": "picture",
+        "fail_reason": "anchor_attribute_mismatch",
+        "debug_info": "Attributes mismatch. [Anchor(247): multicolor/fabric vs Target: multicolor/wood]"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 36,
+        "frame_id": [
+          394,
+          418,
+          492,
+          616
+        ]
+      },
+      {
+        "object_id": 37,
+        "frame_id": [
+          394,
+          418,
+          590,
+          611
+        ]
+      },
+      {
+        "object_id": 431,
+        "frame_id": [
+          394,
+          418,
+          611
+        ]
+      },
+      {
+        "object_id": 240,
+        "frame_id": [
+          15,
+          110,
+          732,
+          765
+        ]
+      },
+      {
+        "object_id": 243,
+        "frame_id": [
+          87,
+          125,
+          732,
+          764,
+          794
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E2-0006",
+      "query_type": "E2_Relation_AnchorAttribute",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a shelf under a brown flowerpot made of stone.",
+      "target_category": "shelf",
+      "target_attributes": []
+    },
+    "constraints": {
+      "spatial_relations": [
+        {
+          "relation": "under",
+          "anchor_category": "flowerpot",
+          "negate": false,
+          "anchor_constraints": {
+            "target_attributes": {
+              "color": "brown",
+              "material": "stone",
+              "matching_method": "exact_atomic_match"
+            }
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        233
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 279,
+        "category": "shelf",
+        "fail_reason": "anchor_attribute_mismatch",
+        "debug_info": "Attributes mismatch. [Anchor(285): grey/stone vs Target: brown/stone]"
+      },
+      {
+        "object_id": 304,
+        "category": "shelf",
+        "fail_reason": "relation_missing",
+        "debug_info": "No flowerpot found via under"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 233,
+        "frame_id": [
+          287,
+          678,
+          286,
+          285
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0003",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Can you look for a cloth that's not blue somewhere on floor 0?",
+      "target_category": "cloth",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          0
+        ]
+      },
+      "negation_attributes": {
+        "type": "color",
+        "negated_value": "blue",
+        "filtering_method": "group_based_exclusion",
+        "gt_attributes": [
+          {
+            "oid": 207,
+            "actual_value": "red"
+          },
+          {
+            "oid": 177,
+            "actual_value": "red"
+          },
+          {
+            "oid": 249,
+            "actual_value": "white"
+          },
+          {
+            "oid": 250,
+            "actual_value": "red"
+          },
+          {
+            "oid": 251,
+            "actual_value": "red"
+          },
+          {
+            "oid": 252,
+            "actual_value": "red"
+          }
+        ]
+      }
+    },
+    "ground_truth": {
+      "object_ids": [
+        207,
+        177,
+        250,
+        251,
+        252
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 161,
+        "category": "cloth",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'blue'."
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 207,
+        "frame_id": [
+          233,
+          232,
+          231,
+          230
+        ]
+      },
+      {
+        "object_id": 177,
+        "frame_id": [
+          686,
+          226,
+          750,
+          682
+        ]
+      },
+      {
+        "object_id": 250,
+        "frame_id": [
+          90,
+          812,
+          91,
+          89
+        ]
+      },
+      {
+        "object_id": 251,
+        "frame_id": [
+          812,
+          105,
+          813,
+          814
+        ]
+      },
+      {
+        "object_id": 252,
+        "frame_id": [
+          757,
+          814,
+          31,
+          756
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0009",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you grab a chair that's not in the hallway?",
+      "target_category": "chair",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "hallway"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        152,
+        153,
+        158,
+        159
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 59,
+        "category": "chair",
+        "fail_reason": "negation_violation",
+        "debug_info": "In hallway (excluded)"
+      },
+      {
+        "object_id": 60,
+        "category": "chair",
+        "fail_reason": "negation_violation",
+        "debug_info": "In hallway (excluded)"
+      },
+      {
+        "object_id": 58,
+        "category": "chair",
+        "fail_reason": "negation_violation",
+        "debug_info": "In hallway (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 152,
+        "frame_id": [
+          727,
+          372,
+          726,
+          725
+        ]
+      },
+      {
+        "object_id": 153,
+        "frame_id": [
+          721,
+          371,
+          720,
+          724
+        ]
+      },
+      {
+        "object_id": 158,
+        "frame_id": [
+          364,
+          367,
+          363,
+          366
+        ]
+      },
+      {
+        "object_id": 159,
+        "frame_id": [
+          384,
+          379,
+          383,
+          385
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0018",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you look for a pedestal that's under a figure and isn’t made of fabric?",
+      "target_category": "pedestal",
+      "target_attributes": []
+    },
+    "constraints": {
+      "spatial_relations": [
+        {
+          "relation": "under",
+          "anchor_category": "figure",
+          "negate": false,
+          "anchor_constraints": {
+            "negation_attributes": {
+              "type": "material",
+              "negated_value": "fabric",
+              "filtering_method": "group_based_exclusion"
+            }
+          }
+        }
+      ],
+      "gt_anchor_details": [
+        {
+          "target_id": 6,
+          "valid_anchors": [
+            {
+              "anchor_id": 7,
+              "actual_value": "stone"
+            }
+          ]
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        6
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 24,
+        "category": "pedestal",
+        "fail_reason": "anchor_has_negated_attribute",
+        "debug_info": "Spatial relation exists, but anchor matches negated attribute: Anchor(25) is 'fabric'"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 6,
+        "frame_id": [
+          572,
+          600,
+          573,
+          564
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0019",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you grab a chair that's close to another chair?",
+      "target_category": "chair",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "chair",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        152,
+        153,
+        158,
+        159,
+        59,
+        60
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 58,
+        "category": "chair",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is chair, but not near any chair"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 152,
+        "frame_id": [
+          727,
+          372,
+          726,
+          725
+        ]
+      },
+      {
+        "object_id": 153,
+        "frame_id": [
+          721,
+          371,
+          720,
+          724
+        ]
+      },
+      {
+        "object_id": 158,
+        "frame_id": [
+          364,
+          367,
+          363,
+          366
+        ]
+      },
+      {
+        "object_id": 159,
+        "frame_id": [
+          384,
+          379,
+          383,
+          385
+        ]
+      },
+      {
+        "object_id": 59,
+        "frame_id": [
+          454,
+          448,
+          449,
+          453
+        ]
+      },
+      {
+        "object_id": 60,
+        "frame_id": [
+          461,
+          462,
+          460,
+          463
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0022",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Can you look for a shelf that's not stone on floor 0?",
+      "target_category": "shelf",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          0
+        ]
+      },
+      "negation_attributes": {
+        "type": "material",
+        "negated_value": "stone",
+        "filtering_method": "group_based_exclusion",
+        "gt_attributes": [
+          {
+            "oid": 304,
+            "actual_value": "wood"
+          },
+          {
+            "oid": 233,
+            "actual_value": "wood"
+          }
+        ]
+      }
+    },
+    "ground_truth": {
+      "object_ids": [
+        304,
+        233
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 279,
+        "category": "shelf",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'stone'."
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 304,
+        "frame_id": [
+          46,
+          66,
+          45,
+          44
+        ]
+      },
+      {
+        "object_id": 233,
+        "frame_id": [
+          287,
+          678,
+          286,
+          285
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0024",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you look for a stand that's close to a model?",
+      "target_category": "stand",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "model",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        235
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 162,
+        "category": "stand",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is stand, but not near any model"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 235,
+        "frame_id": [
+          685,
+          292,
+          322,
+          678
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0025",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00894-HY1NcmCgn3n",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you grab a picture that's near the grey wooden shelf?",
+      "target_category": "picture",
+      "target_attributes": []
+    },
+    "constraints": {
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "shelf",
+          "negate": false,
+          "anchor_constraints": {
+            "target_attributes": {
+              "color": "grey",
+              "material": "wood",
+              "matching_method": "exact_atomic_match"
+            }
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        238
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 261,
+        "category": "picture",
+        "fail_reason": "anchor_attribute_mismatch",
+        "debug_info": "Attributes mismatch. [Anchor(279): grey/stone vs Target: grey/wood]"
+      },
+      {
+        "object_id": 240,
+        "category": "picture",
+        "fail_reason": "anchor_attribute_mismatch",
+        "debug_info": "Attributes mismatch. [Anchor(279): grey/stone vs Target: grey/wood]"
+      },
+      {
+        "object_id": 262,
+        "category": "picture",
+        "fail_reason": "anchor_attribute_mismatch",
+        "debug_info": "Attributes mismatch. [Anchor(279): grey/stone vs Target: grey/wood]"
+      },
+      {
+        "object_id": 431,
+        "category": "picture",
+        "fail_reason": "relation_missing",
+        "debug_info": "No shelf found via near"
+      },
+      {
+        "object_id": 247,
+        "category": "picture",
+        "fail_reason": "anchor_attribute_mismatch",
+        "debug_info": "Attributes mismatch. [Anchor(279): grey/stone vs Target: grey/wood]"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 238,
+        "frame_id": [
+          57,
+          56,
+          55,
+          54
+        ]
+      }
+    ]
+  }
+]

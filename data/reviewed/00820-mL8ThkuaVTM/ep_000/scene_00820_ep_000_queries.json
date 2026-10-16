@@ -1,0 +1,1604 @@
+[
+  {
+    "meta": {
+      "query_id": "A1-0000",
+      "query_type": "A1_Room",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a sink in the bathroom.",
+      "target_category": "sink",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "bathroom"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        361,
+        50
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 267,
+        "category": "sink",
+        "fail_reason": "wrong_room",
+        "debug_info": "In combined kitchen and living room, expected bathroom"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 361,
+        "frame_id": [
+          769,
+          746,
+          770,
+          771
+        ]
+      },
+      {
+        "object_id": 50,
+        "frame_id": [
+          388,
+          387,
+          386,
+          400
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0001",
+      "query_type": "A1_Room",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a led tv in the combined kitchen and living room.",
+      "target_category": "led tv",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "combined kitchen and living room"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        208
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 333,
+        "category": "led tv",
+        "fail_reason": "wrong_room",
+        "debug_info": "In living room, expected combined kitchen and living room"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 208,
+        "frame_id": [
+          10,
+          177,
+          201,
+          945,
+          968
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0002",
+      "query_type": "A1_Room",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a curtain in the combined kitchen and living room.",
+      "target_category": "curtain",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "combined kitchen and living room"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        225,
+        227
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 31,
+        "category": "curtain",
+        "fail_reason": "wrong_room",
+        "debug_info": "In bedroom, expected combined kitchen and living room"
+      },
+      {
+        "object_id": 92,
+        "category": "curtain",
+        "fail_reason": "wrong_room",
+        "debug_info": "In bedroom, expected combined kitchen and living room"
+      },
+      {
+        "object_id": 30,
+        "category": "curtain",
+        "fail_reason": "wrong_room",
+        "debug_info": "In bedroom, expected combined kitchen and living room"
+      },
+      {
+        "object_id": 305,
+        "category": "curtain",
+        "fail_reason": "wrong_room",
+        "debug_info": "In bedroom, expected combined kitchen and living room"
+      },
+      {
+        "object_id": 93,
+        "category": "curtain",
+        "fail_reason": "wrong_room",
+        "debug_info": "In bedroom, expected combined kitchen and living room"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 225,
+        "frame_id": [
+          980,
+          21,
+          958,
+          974
+        ]
+      },
+      {
+        "object_id": 227,
+        "frame_id": [
+          18,
+          976,
+          983,
+          17
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0003",
+      "query_type": "A1_Room",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a couch in the combined kitchen and living room.",
+      "target_category": "couch",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "combined kitchen and living room"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        220
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 341,
+        "category": "couch",
+        "fail_reason": "wrong_room",
+        "debug_info": "In living room, expected combined kitchen and living room"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 220,
+        "frame_id": [
+          954,
+          13,
+          981,
+          955
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0006",
+      "query_type": "A1_Room",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a pillow in the bedroom.",
+      "target_category": "pillow",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "bedroom"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        297,
+        298,
+        27,
+        28,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 222,
+        "category": "pillow",
+        "fail_reason": "wrong_room",
+        "debug_info": "In combined kitchen and living room, expected bedroom"
+      },
+      {
+        "object_id": 221,
+        "category": "pillow",
+        "fail_reason": "wrong_room",
+        "debug_info": "In combined kitchen and living room, expected bedroom"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 297,
+        "frame_id": [
+          680,
+          687,
+          688
+        ]
+      },
+      {
+        "object_id": 298,
+        "frame_id": [
+          656,
+          682,
+          711,
+          655
+        ]
+      },
+      {
+        "object_id": 27,
+        "frame_id": [
+          470,
+          463,
+          464,
+          469
+        ]
+      },
+      {
+        "object_id": 28,
+        "frame_id": [
+          445,
+          468,
+          425,
+          511
+        ]
+      },
+      {
+        "object_id": 79,
+        "frame_id": [
+          337,
+          338
+        ]
+      },
+      {
+        "object_id": 80,
+        "frame_id": [
+          338,
+          318,
+          295,
+          496
+        ]
+      },
+      {
+        "object_id": 81,
+        "frame_id": [
+          326,
+          327,
+          324,
+          328
+        ]
+      },
+      {
+        "object_id": 82,
+        "frame_id": [
+          337,
+          317,
+          496,
+          326
+        ]
+      },
+      {
+        "object_id": 83,
+        "frame_id": [
+          337,
+          317,
+          495,
+          326
+        ]
+      },
+      {
+        "object_id": 84,
+        "frame_id": [
+          327,
+          548,
+          334,
+          328
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0008",
+      "query_type": "A1_Room",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a led tv in the living room.",
+      "target_category": "led tv",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "living room"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        333
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 208,
+        "category": "led tv",
+        "fail_reason": "wrong_room",
+        "debug_info": "In combined kitchen and living room, expected living room"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 333,
+        "frame_id": [
+          840,
+          839,
+          838,
+          837
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0009",
+      "query_type": "A1_Room",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a cabinet in the bedroom.",
+      "target_category": "cabinet",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "bedroom"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        308,
+        14,
+        85
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 49,
+        "category": "cabinet",
+        "fail_reason": "wrong_room",
+        "debug_info": "In bathroom, expected bedroom"
+      },
+      {
+        "object_id": 334,
+        "category": "cabinet",
+        "fail_reason": "wrong_room",
+        "debug_info": "In living room, expected bedroom"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 308,
+        "frame_id": [
+          700,
+          667,
+          697,
+          703
+        ]
+      },
+      {
+        "object_id": 14,
+        "frame_id": [
+          463,
+          462,
+          464,
+          461
+        ]
+      },
+      {
+        "object_id": 85,
+        "frame_id": [
+          353,
+          358,
+          359,
+          354
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0003",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a coffee table near a flower.",
+      "target_category": "coffee table",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "flower",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        215
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 218,
+        "category": "coffee table",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is coffee table, but not near any flower"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 215,
+        "frame_id": [
+          15,
+          955,
+          16,
+          10
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C2-0001",
+      "query_type": "C2_ChainedRelation",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a floor mat near a toilet which is near a bathroom cabinet.",
+      "target_category": "floor mat",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "toilet",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "near",
+            "anchor_category": "bathroom cabinet",
+            "negate": false
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        355
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 39,
+        "category": "floor mat",
+        "fail_reason": "chain_mismatch",
+        "debug_info": "Found near toilet, but that neighbor has no near bathroom cabinet"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 355,
+        "frame_id": [
+          764,
+          765,
+          763
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D1-0010",
+      "query_type": "D1_NegRoom",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a led tv not in the combined kitchen and living room.",
+      "target_category": "led tv",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "combined kitchen and living room"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        333
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 208,
+        "category": "led tv",
+        "fail_reason": "negation_violation",
+        "debug_info": "In combined kitchen and living room (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 333,
+        "frame_id": [
+          840,
+          839,
+          838,
+          837
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D2-0002",
+      "query_type": "D2_NegBinaryRelation",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a floor mat not near any bathrobe.",
+      "target_category": "floor mat",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "bathrobe",
+          "negate": true,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        355
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 39,
+        "category": "floor mat",
+        "fail_reason": "negation_violation",
+        "debug_info": "Is floor mat and IS near bathrobe (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 355,
+        "frame_id": [
+          764,
+          765,
+          763
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D3-0001",
+      "query_type": "D3_NegChainedRelation",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a sink near a toilet that is not near any bathrobe.",
+      "target_category": "sink",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "toilet",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "near",
+            "anchor_category": "bathrobe",
+            "negate": true
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        361
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 50,
+        "category": "sink",
+        "fail_reason": "negation_violation",
+        "debug_info": "Has near toilet which IS near bathrobe (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 361,
+        "frame_id": [
+          769,
+          746,
+          770,
+          771
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D4-0002",
+      "query_type": "D4_Negation_Description",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a coffee table that is not black on floor 1.",
+      "target_category": "coffee table",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          1
+        ]
+      },
+      "negation_attributes": {
+        "type": "color",
+        "negated_value": "black",
+        "filtering_method": "group_based_exclusion",
+        "gt_attributes": [
+          {
+            "oid": 215,
+            "actual_value": "brown"
+          }
+        ]
+      }
+    },
+    "ground_truth": {
+      "object_ids": [
+        215
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 218,
+        "category": "coffee table",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'black'."
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 215,
+        "frame_id": [
+          15,
+          955,
+          16,
+          10
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D5-0003",
+      "query_type": "D5_NegatedAnchorAttribute",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a cabinet near a box not made of fabric.",
+      "target_category": "cabinet",
+      "target_attributes": []
+    },
+    "constraints": {
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "box",
+          "negate": false,
+          "anchor_constraints": {
+            "negation_attributes": {
+              "type": "material",
+              "negated_value": "fabric",
+              "filtering_method": "group_based_exclusion"
+            }
+          }
+        }
+      ],
+      "gt_anchor_details": [
+        {
+          "target_id": 14,
+          "valid_anchors": [
+            {
+              "anchor_id": 16,
+              "actual_value": "plastic"
+            },
+            {
+              "anchor_id": 17,
+              "actual_value": "plastic"
+            },
+            {
+              "anchor_id": 15,
+              "actual_value": "plastic"
+            }
+          ]
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        14
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 334,
+        "category": "cabinet",
+        "fail_reason": "anchor_has_negated_attribute",
+        "debug_info": "Spatial relation exists, but anchor matches negated attribute: Anchor(337) is 'fabric'"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 14,
+        "frame_id": [
+          463,
+          462,
+          464,
+          461
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "ACD-0000",
+      "query_type": "ACD_Complex",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a pillow in the bedroom, near a bed table which is not under any bedside lamp.",
+      "target_category": "pillow",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "bedroom"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "bed table",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "under",
+            "anchor_category": "bedside lamp",
+            "negate": true
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        79,
+        81,
+        84,
+        297
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 27,
+        "category": "pillow",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Generated by area_free_v1 after removing functional-area scope"
+      },
+      {
+        "object_id": 28,
+        "category": "pillow",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Generated by area_free_v1 after removing functional-area scope"
+      },
+      {
+        "object_id": 80,
+        "category": "pillow",
+        "fail_reason": "negation_violation",
+        "debug_info": "In Sleeping Area, near bed table which IS under bedside lamp (should not be)"
+      },
+      {
+        "object_id": 82,
+        "category": "pillow",
+        "fail_reason": "negation_violation",
+        "debug_info": "In Sleeping Area, near bed table which IS under bedside lamp (should not be)"
+      },
+      {
+        "object_id": 83,
+        "category": "pillow",
+        "fail_reason": "negation_violation",
+        "debug_info": "In Sleeping Area, near bed table which IS under bedside lamp (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 79,
+        "frame_id": [
+          337,
+          338
+        ]
+      },
+      {
+        "object_id": 81,
+        "frame_id": [
+          326,
+          327,
+          324,
+          328
+        ]
+      },
+      {
+        "object_id": 84,
+        "frame_id": [
+          327,
+          548,
+          334,
+          328
+        ]
+      },
+      {
+        "object_id": 297,
+        "frame_id": [
+          680,
+          687,
+          688
+        ]
+      }
+    ],
+    "provenance": {
+      "transform_version": "area_free_v1",
+      "source_query_id": "ABCD-0000",
+      "source_query_type": "ABCD_Complex",
+      "source_file": "00820-mL8ThkuaVTM/ep_000/scene_00820_ep_000_queries.json",
+      "source_sha256": "440605d8597a18aa360fa5fac6a67580267ad97840507a9c23bfcb920e72a25b",
+      "removed_area": "Sleeping Area",
+      "source_gt_count": 5,
+      "inferred_gt_count": 5,
+      "added_gt_count": 0
+    }
+  },
+  {
+    "meta": {
+      "query_id": "E1-0000",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a black led tv made of plastic in the floor 1.",
+      "target_category": "led tv",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          1
+        ]
+      },
+      "target_attributes": {
+        "color": "black",
+        "material": "plastic",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        208
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 333,
+        "category": "led tv",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (black, plastic), but Floor 0 != 1"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 208,
+        "frame_id": [
+          975,
+          14,
+          953,
+          974
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0003",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a brown bed made of wood in the floor 2.",
+      "target_category": "bed",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          2
+        ]
+      },
+      "target_attributes": {
+        "color": "brown",
+        "material": "wood",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        26,
+        78
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 296,
+        "category": "bed",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (brown, wood), but Floor 0 != 2"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 26,
+        "frame_id": [
+          435,
+          470,
+          469,
+          471
+        ]
+      },
+      {
+        "object_id": 78,
+        "frame_id": [
+          321,
+          341,
+          320,
+          319
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0004",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a brown clothes hanger made of wood in the floor 1.",
+      "target_category": "clothes hanger",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          1
+        ]
+      },
+      "target_attributes": {
+        "color": "brown",
+        "material": "wood",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        182,
+        183
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 181,
+        "category": "clothes hanger",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'black' vs 'brown'; Mat: 'metal' vs 'wood'"
+      },
+      {
+        "object_id": 180,
+        "category": "clothes hanger",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'black' vs 'brown'; Mat: 'metal' vs 'wood'"
+      },
+      {
+        "object_id": 179,
+        "category": "clothes hanger",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'black' vs 'brown'; Mat: 'metal' vs 'wood'"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 182,
+        "frame_id": [
+          147,
+          148,
+          146,
+          149
+        ]
+      },
+      {
+        "object_id": 183,
+        "frame_id": [
+          152
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0006",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a brown cabinet made of wood in the floor 2.",
+      "target_category": "cabinet",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          2
+        ]
+      },
+      "target_attributes": {
+        "color": "brown",
+        "material": "wood",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        14,
+        85
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 334,
+        "category": "cabinet",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (brown, wood), but Floor 0 != 2"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 14,
+        "frame_id": [
+          463,
+          462,
+          464,
+          461
+        ]
+      },
+      {
+        "object_id": 85,
+        "frame_id": [
+          353,
+          358,
+          359,
+          354
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0007",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a brown coffee table made of wood in the floor 1.",
+      "target_category": "coffee table",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          1
+        ]
+      },
+      "target_attributes": {
+        "color": "brown",
+        "material": "wood",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        215
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 218,
+        "category": "coffee table",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'black' vs 'brown'"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 215,
+        "frame_id": [
+          15,
+          955,
+          16,
+          10
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0010",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a brown bed table made of wood in the floor 2.",
+      "target_category": "bed table",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          2
+        ]
+      },
+      "target_attributes": {
+        "color": "brown",
+        "material": "wood",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        90
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 300,
+        "category": "bed table",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (brown, wood), but Floor 0 != 2"
+      },
+      {
+        "object_id": 299,
+        "category": "bed table",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (brown, wood), but Floor 0 != 2"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 90,
+        "frame_id": [
+          410,
+          330,
+          329,
+          322
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E2-0000",
+      "query_type": "E2_Relation_AnchorAttribute",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a clothes hanger near a black clothes hanger made of metal.",
+      "target_category": "clothes hanger",
+      "target_attributes": []
+    },
+    "constraints": {
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "clothes hanger",
+          "negate": false,
+          "anchor_constraints": {
+            "target_attributes": {
+              "color": "black",
+              "material": "metal",
+              "matching_method": "exact_atomic_match"
+            }
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        179,
+        180,
+        181,
+        182
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 183,
+        "category": "clothes hanger",
+        "fail_reason": "anchor_attribute_mismatch",
+        "debug_info": "Attributes mismatch. [Anchor(182): brown/wood vs Target: black/metal]"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 179,
+        "frame_id": [
+          130
+        ]
+      },
+      {
+        "object_id": 180,
+        "frame_id": [
+          128,
+          186,
+          583,
+          127
+        ]
+      },
+      {
+        "object_id": 181,
+        "frame_id": [
+          127,
+          585,
+          187,
+          584
+        ]
+      },
+      {
+        "object_id": 182,
+        "frame_id": [
+          147,
+          148,
+          146,
+          149
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E2-0001",
+      "query_type": "E2_Relation_AnchorAttribute",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a pillow near a white pillow made of fabric.",
+      "target_category": "pillow",
+      "target_attributes": []
+    },
+    "constraints": {
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "pillow",
+          "negate": false,
+          "anchor_constraints": {
+            "target_attributes": {
+              "color": "white",
+              "material": "fabric",
+              "matching_method": "exact_atomic_match"
+            }
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        297,
+        298,
+        79
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 222,
+        "category": "pillow",
+        "fail_reason": "relation_missing",
+        "debug_info": "No pillow found via near"
+      },
+      {
+        "object_id": 221,
+        "category": "pillow",
+        "fail_reason": "relation_missing",
+        "debug_info": "No pillow found via near"
+      },
+      {
+        "object_id": 27,
+        "category": "pillow",
+        "fail_reason": "anchor_attribute_mismatch",
+        "debug_info": "Attributes mismatch. [Anchor(28): blue/fabric vs Target: white/fabric]"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 297,
+        "frame_id": [
+          680,
+          687,
+          688
+        ]
+      },
+      {
+        "object_id": 298,
+        "frame_id": [
+          656,
+          682,
+          711,
+          655
+        ]
+      },
+      {
+        "object_id": 79,
+        "frame_id": [
+          337,
+          338
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0005",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00820-mL8ThkuaVTM",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you grab the LED TV from the combined kitchen and living room?",
+      "target_category": "led tv",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "combined kitchen and living room"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        208
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 333,
+        "category": "led tv",
+        "fail_reason": "wrong_room",
+        "debug_info": "In living room, expected combined kitchen and living room"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 208,
+        "frame_id": [
+          975,
+          14,
+          953,
+          974
+        ]
+      }
+    ]
+  }
+]

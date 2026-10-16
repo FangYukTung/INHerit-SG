@@ -1,0 +1,120 @@
+predefined_object_classes: chair.armchair.office chair.sofa.couch.bed.nightstand.table.coffee
+  table.desk.shelf.bookshelf.cabinet.wardrobe.dresser.bench.stool.ottoman.refrigerator.microwave.oven.stove.toaster.coffee
+  machine.kettle.dishwasher.washing machine.dryer.vacuum cleaner.fan.heater.radiator.air
+  conditioner.tv.monitor.computer.laptop.keyboard.mouse.printer.speaker.telephone.clock.lamp.chandelier.sink.toilet.bathtub.shower.towel.toilet
+  paper.soap dispenser.mirror.laundry basket.plant.flower.vase.pot.painting.picture
+  frame.statue.toy.stuffed animal.book.magazine.box.basket.bin.trash can.bag.backpack.luggage.umbrella.bottle.cup.mug.bowl.plate.tray.knife.utensil.pillow.cushion.blanket.curtain.blinds.rug.carpet.mat.clothes.jacket.shoe.bicycle.guitar.piano.fireplace
+use_predefined_object_classes: true
+filter_edge_detections: false
+semantic_forest:
+  nodes_file: nodes.jsonl
+  edges_file: relations.csv
+  clustering_edge_threshold: 0.8
+re_identification:
+  visual_similarity_threshold: 0.8
+  spatial_distance_threshold: 2.0
+  force_merge_distance_threshold: 1.5
+  semantic_similarity_threshold: 0.6
+  generic_object_visual_threshold: 0.6
+  second_stage_visual_threshold: 0.6
+spatial_reasoning:
+  method: geometric
+  clustering_distance_threshold: 1.0
+room_segmentation:
+  use_bottleneck: false
+  use_doors: true
+  door_band_m: 0.25
+  min_cut_area_px: 40
+  local_window_m: 20.0
+  switch_confirm_k: 3
+  room_match_dist_m: 1.5
+  min_kf_before_split: 5
+  min_switch_margin_px: 5
+keyframe_detection:
+  enable_keyframe_detection: true
+  keyframe_similarity_threshold: 0.85
+main_output_directory: outputs/example-map
+debug_mode: false
+trajectory_data:
+  base_dir: ${INHERIT_TRAJECTORY}
+  rgb_subdir: rgb
+  depth_subdir: depth
+  pose_subdir: pose
+  filename_prefix: ''
+  filename_start_index: 0
+  filename_padding: 6
+  rgb_extension: .png
+  num_images_to_process: -1
+camera_intrinsics:
+  fx: 540.0
+  fy: 540.0
+  cx: 540.0
+  cy: 360.0
+  depth_scale: 1000.0
+multi_gpu:
+  enabled: false
+feature_extractor:
+  weights_path: ${INHERIT_DINO_MODEL}
+segmentation_module:
+  checkpoint_path: ${INHERIT_SAM3_CHECKPOINT}
+  bpe_path: ${INHERIT_SAM3_BPE}
+  box_threshold: 0.5
+  save_viz_image: false
+  save_json: true
+  category_batch_size: 32
+map_config:
+  resolution: 0.05
+  raycast_update_occupied: true
+  raycast_stride: 6
+  hit_stride: 3
+floor_tracking:
+  initial_floor: 0
+streaming:
+  queue_capacity: 50
+visual_reranking:
+  confidence: 0.8
+  budget: 5
+retrieval:
+  target_threshold: 0.55
+  near_distance: 1.5
+  route_depth: 20
+  pool_size: 5
+  rrf_constant: 10.0
+  structured_weight: 1.0
+  target_weight: 0.5
+  full_query_weight: 0.35
+llm_config:
+  model_router:
+    endpoints:
+      vision:
+        model: qwen3-vl-flash
+        supports_vision: true
+        api_key_env: INHERIT_API_KEY
+        base_url_env: INHERIT_API_BASE
+        max_retries: 2
+        timeout_s: 60
+      text:
+        model: qwen3.6-flash
+        api_key_env: INHERIT_API_KEY
+        base_url_env: INHERIT_API_BASE
+        max_retries: 2
+        timeout_s: 60
+      rerank:
+        model: gemini-2.5-flash
+        supports_vision: true
+        api_key_env: INHERIT_API_KEY
+        base_url_env: INHERIT_API_BASE
+        max_retries: 2
+        timeout_s: 60
+    routing:
+      default: vision
+      leaf_description: vision
+      object_expansion: vision
+      scene_summary: vision
+      cluster_summary: text
+      tag_filtering: text
+      query_parsing: text
+      visual_reranking: rerank
+    runtime:
+      cache_dir: outputs/api-cache
+      usage_log: outputs/model-usage.jsonl

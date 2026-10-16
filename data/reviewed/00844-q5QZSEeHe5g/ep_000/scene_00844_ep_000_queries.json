@@ -1,0 +1,1790 @@
+[
+  {
+    "meta": {
+      "query_id": "A1-0002",
+      "query_type": "A1_Room",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a hat in the entryway.",
+      "target_category": "hat",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "entryway"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        358
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 1146,
+        "category": "hat",
+        "fail_reason": "wrong_room",
+        "debug_info": "In laundry room, expected entryway"
+      },
+      {
+        "object_id": 1148,
+        "category": "hat",
+        "fail_reason": "wrong_room",
+        "debug_info": "In laundry room, expected entryway"
+      },
+      {
+        "object_id": 1147,
+        "category": "hat",
+        "fail_reason": "wrong_room",
+        "debug_info": "In laundry room, expected entryway"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 358,
+        "frame_id": [
+          114,
+          720,
+          842,
+          110
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0013",
+      "query_type": "A1_Room",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a drawing in the laundry room.",
+      "target_category": "drawing",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "laundry room"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        1108,
+        1109
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 713,
+        "category": "drawing",
+        "fail_reason": "wrong_room",
+        "debug_info": "In kitchen, expected laundry room"
+      },
+      {
+        "object_id": 940,
+        "category": "drawing",
+        "fail_reason": "wrong_room",
+        "debug_info": "In living room, expected laundry room"
+      },
+      {
+        "object_id": 941,
+        "category": "drawing",
+        "fail_reason": "wrong_room",
+        "debug_info": "In living room, expected laundry room"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 1108,
+        "frame_id": [
+          332,
+          378,
+          328,
+          336
+        ]
+      },
+      {
+        "object_id": 1109,
+        "frame_id": [
+          336,
+          376,
+          328,
+          331
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "A1-0018",
+      "query_type": "A1_Room",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a chest in the bedroom.",
+      "target_category": "chest",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "bedroom"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        523
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 133,
+        "category": "chest",
+        "fail_reason": "wrong_room",
+        "debug_info": "In dressing room, expected bedroom"
+      },
+      {
+        "object_id": 1116,
+        "category": "chest",
+        "fail_reason": "wrong_room",
+        "debug_info": "In laundry room, expected bedroom"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 523,
+        "frame_id": [
+          18,
+          19,
+          20,
+          17
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "C1-0005",
+      "query_type": "C1_BinaryRelation",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a chest under a pillow.",
+      "target_category": "chest",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "under",
+          "anchor_category": "pillow",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        1116
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 133,
+        "category": "chest",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is chest, but not under any pillow"
+      },
+      {
+        "object_id": 523,
+        "category": "chest",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Is chest, but not under any pillow"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 1116,
+        "frame_id": [
+          316,
+          373,
+          317,
+          372
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D1-0005",
+      "query_type": "D1_NegRoom",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a doormat not in the kitchen.",
+      "target_category": "doormat",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": [
+          "kitchen"
+        ]
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        477
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 717,
+        "category": "doormat",
+        "fail_reason": "negation_violation",
+        "debug_info": "In kitchen (excluded)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 477,
+        "frame_id": [
+          581,
+          580,
+          579,
+          577
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D2-0003",
+      "query_type": "D2_NegBinaryRelation",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a doormat not near any pillow.",
+      "target_category": "doormat",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "pillow",
+          "negate": true,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        477
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 717,
+        "category": "doormat",
+        "fail_reason": "negation_violation",
+        "debug_info": "Is doormat and IS near pillow (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 477,
+        "frame_id": [
+          108,
+          558,
+          578,
+          837,
+          865
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D2-0008",
+      "query_type": "D2_NegBinaryRelation",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a blanket not on any pillow.",
+      "target_category": "blanket",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "anchor_category": "pillow",
+          "negate": true,
+          "anchor_attributes": [],
+          "anchor_constraints": null
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        272,
+        141
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 407,
+        "category": "blanket",
+        "fail_reason": "negation_violation",
+        "debug_info": "Is blanket and IS on pillow (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 272,
+        "frame_id": [
+          1232,
+          1260,
+          1233,
+          1231
+        ]
+      },
+      {
+        "object_id": 141,
+        "frame_id": [
+          1113,
+          1114,
+          1112,
+          1109
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D3-0000",
+      "query_type": "D3_NegChainedRelation",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a pillow on a rug that is not under any rocking chair.",
+      "target_category": "pillow",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "anchor_category": "rug",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "under",
+            "anchor_category": "rocking chair",
+            "negate": true
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        1115
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 400,
+        "category": "pillow",
+        "fail_reason": "negation_violation",
+        "debug_info": "Has on rug which IS under rocking chair (should not be)"
+      },
+      {
+        "object_id": 399,
+        "category": "pillow",
+        "fail_reason": "negation_violation",
+        "debug_info": "Has on rug which IS under rocking chair (should not be)"
+      },
+      {
+        "object_id": 402,
+        "category": "pillow",
+        "fail_reason": "negation_violation",
+        "debug_info": "Has on rug which IS under rocking chair (should not be)"
+      },
+      {
+        "object_id": 403,
+        "category": "pillow",
+        "fail_reason": "negation_violation",
+        "debug_info": "Has on rug which IS under rocking chair (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 1115,
+        "frame_id": [
+          318,
+          377,
+          317,
+          316
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D3-0006",
+      "query_type": "D3_NegChainedRelation",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a bench near a table that is not near any chair.",
+      "target_category": "bench",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "table",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "near",
+            "anchor_category": "chair",
+            "negate": true
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        413
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 673,
+        "category": "bench",
+        "fail_reason": "negation_violation",
+        "debug_info": "Has near table which IS near chair (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 413,
+        "frame_id": [
+          608,
+          607,
+          606,
+          605
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D4-0007",
+      "query_type": "D4_Negation_Description",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a shelf that is not made of wood on floor 2.",
+      "target_category": "shelf",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          2
+        ]
+      },
+      "negation_attributes": {
+        "type": "material",
+        "negated_value": "wood",
+        "filtering_method": "group_based_exclusion",
+        "gt_attributes": [
+          {
+            "oid": 278,
+            "actual_value": "metal"
+          }
+        ]
+      }
+    },
+    "ground_truth": {
+      "object_ids": [
+        278
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 37,
+        "category": "shelf",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'wood'."
+      },
+      {
+        "object_id": 8,
+        "category": "shelf",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'wood'."
+      },
+      {
+        "object_id": 218,
+        "category": "shelf",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'wood'."
+      },
+      {
+        "object_id": 316,
+        "category": "shelf",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'wood'."
+      },
+      {
+        "object_id": 217,
+        "category": "shelf",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'wood'."
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 278,
+        "frame_id": [
+          1253,
+          1230,
+          1254,
+          1255
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "D4-0017",
+      "query_type": "D4_Negation_Description",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a hat that is not brown on floor 1.",
+      "target_category": "hat",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          1
+        ]
+      },
+      "negation_attributes": {
+        "type": "color",
+        "negated_value": "brown",
+        "filtering_method": "group_based_exclusion",
+        "gt_attributes": [
+          {
+            "oid": 1147,
+            "actual_value": "black"
+          },
+          {
+            "oid": 1148,
+            "actual_value": "black"
+          },
+          {
+            "oid": 358,
+            "actual_value": "black"
+          }
+        ]
+      }
+    },
+    "ground_truth": {
+      "object_ids": [
+        1147,
+        358
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 1146,
+        "category": "hat",
+        "fail_reason": "is_target_attribute",
+        "debug_info": "Floor Match. It IS 'brown'."
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 1147,
+        "frame_id": [
+          339,
+          326,
+          338
+        ]
+      },
+      {
+        "object_id": 358,
+        "frame_id": [
+          114,
+          720,
+          842,
+          110
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "ACD-0000",
+      "query_type": "ACD_Complex",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a bed in the bedroom, under a pillow which is not on any fur.",
+      "target_category": "bed",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "bedroom"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "under",
+          "anchor_category": "pillow",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "on",
+            "anchor_category": "fur",
+            "negate": true
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        75,
+        273,
+        540
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 90,
+        "category": "bed",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Generated by area_free_v1 after removing functional-area scope"
+      },
+      {
+        "object_id": 1175,
+        "category": "bed",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Generated by area_free_v1 after removing functional-area scope"
+      },
+      {
+        "object_id": 1176,
+        "category": "bed",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Generated by area_free_v1 after removing functional-area scope"
+      },
+      {
+        "object_id": 1177,
+        "category": "bed",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Generated by area_free_v1 after removing functional-area scope"
+      },
+      {
+        "object_id": 1178,
+        "category": "bed",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Generated by area_free_v1 after removing functional-area scope"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 75,
+        "frame_id": [
+          1024,
+          951,
+          1023,
+          1022
+        ]
+      },
+      {
+        "object_id": 273,
+        "frame_id": [
+          1260,
+          1230,
+          1259,
+          1261
+        ]
+      },
+      {
+        "object_id": 540,
+        "frame_id": [
+          18,
+          758,
+          43,
+          759
+        ]
+      }
+    ],
+    "provenance": {
+      "transform_version": "area_free_v1",
+      "source_query_id": "ABCD-0000",
+      "source_query_type": "ABCD_Complex",
+      "source_file": "00844-q5QZSEeHe5g/ep_000/scene_00844_ep_000_queries.json",
+      "source_sha256": "5d58060b8e75994a18419b5c90f2c988515a0e30df5efaba032ebfb2566e7efd",
+      "removed_area": "Sleeping Area",
+      "source_gt_count": 2,
+      "inferred_gt_count": 3,
+      "added_gt_count": 1
+    }
+  },
+  {
+    "meta": {
+      "query_id": "ACD-0001",
+      "query_type": "ACD_Complex",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a bed in the bedroom, near a table which is not near any tv remote.",
+      "target_category": "bed",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "bedroom"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "table",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "near",
+            "anchor_category": "tv remote",
+            "negate": true
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        273
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 75,
+        "category": "bed",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Generated by area_free_v1 after removing functional-area scope"
+      },
+      {
+        "object_id": 90,
+        "category": "bed",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Generated by area_free_v1 after removing functional-area scope"
+      },
+      {
+        "object_id": 142,
+        "category": "bed",
+        "fail_reason": "wrong_room",
+        "debug_info": "Generated by area_free_v1 after removing functional-area scope"
+      },
+      {
+        "object_id": 540,
+        "category": "bed",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Generated by area_free_v1 after removing functional-area scope"
+      },
+      {
+        "object_id": 1175,
+        "category": "bed",
+        "fail_reason": "relation_mismatch",
+        "debug_info": "Generated by area_free_v1 after removing functional-area scope"
+      },
+      {
+        "object_id": 1176,
+        "category": "bed",
+        "fail_reason": "negation_violation",
+        "debug_info": "In Sleeping Area, near table which IS near tv remote (should not be)"
+      },
+      {
+        "object_id": 1177,
+        "category": "bed",
+        "fail_reason": "negation_violation",
+        "debug_info": "In Sleeping Area, near table which IS near tv remote (should not be)"
+      },
+      {
+        "object_id": 1178,
+        "category": "bed",
+        "fail_reason": "negation_violation",
+        "debug_info": "In Sleeping Area, near table which IS near tv remote (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 273,
+        "frame_id": [
+          1230,
+          1259
+        ]
+      }
+    ],
+    "provenance": {
+      "transform_version": "area_free_v1",
+      "source_query_id": "ABCD-0001",
+      "source_query_type": "ABCD_Complex",
+      "source_file": "00844-q5QZSEeHe5g/ep_000/scene_00844_ep_000_queries.json",
+      "source_sha256": "5d58060b8e75994a18419b5c90f2c988515a0e30df5efaba032ebfb2566e7efd",
+      "removed_area": "Sleeping Area",
+      "source_gt_count": 1,
+      "inferred_gt_count": 1,
+      "added_gt_count": 0
+    }
+  },
+  {
+    "meta": {
+      "query_id": "ACD-0003",
+      "query_type": "ACD_Complex",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a armchair in the living room, under a pillow which is not near any blanket.",
+      "target_category": "armchair",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "living room"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "under",
+          "anchor_category": "pillow",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "near",
+            "anchor_category": "blanket",
+            "negate": true
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        908
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 507,
+        "category": "armchair",
+        "fail_reason": "wrong_room",
+        "debug_info": "Generated by area_free_v1 after removing functional-area scope"
+      },
+      {
+        "object_id": 906,
+        "category": "armchair",
+        "fail_reason": "negation_violation",
+        "debug_info": "In Seating Area, under pillow which IS near blanket (should not be)"
+      },
+      {
+        "object_id": 912,
+        "category": "armchair",
+        "fail_reason": "negation_violation",
+        "debug_info": "In Seating Area, under pillow which IS near blanket (should not be)"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 908,
+        "frame_id": [
+          188,
+          514,
+          187,
+          186
+        ]
+      }
+    ],
+    "provenance": {
+      "transform_version": "area_free_v1",
+      "source_query_id": "ABCD-0003",
+      "source_query_type": "ABCD_Complex",
+      "source_file": "00844-q5QZSEeHe5g/ep_000/scene_00844_ep_000_queries.json",
+      "source_sha256": "5d58060b8e75994a18419b5c90f2c988515a0e30df5efaba032ebfb2566e7efd",
+      "removed_area": "Seating Area",
+      "source_gt_count": 1,
+      "inferred_gt_count": 1,
+      "added_gt_count": 0
+    }
+  },
+  {
+    "meta": {
+      "query_id": "E1-0001",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a brown table made of wood in the floor 2.",
+      "target_category": "table",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          2
+        ]
+      },
+      "target_attributes": {
+        "color": "brown",
+        "material": "wood",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        324
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 1287,
+        "category": "table",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (brown, wood), but Floor 0 != 2"
+      },
+      {
+        "object_id": 434,
+        "category": "table",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (brown, wood), but Floor 1 != 2"
+      },
+      {
+        "object_id": 385,
+        "category": "table",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (brown, wood), but Floor 1 != 2"
+      },
+      {
+        "object_id": 918,
+        "category": "table",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (brown, wood), but Floor 1 != 2"
+      },
+      {
+        "object_id": 755,
+        "category": "table",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (brown, wood), but Floor 1 != 2"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 324,
+        "frame_id": [
+          1216
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0002",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a white shower curtain made of fabric in the floor 2.",
+      "target_category": "shower curtain",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          2
+        ]
+      },
+      "target_attributes": {
+        "color": "white",
+        "material": "fabric",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        21
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 1038,
+        "category": "shower curtain",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (white, fabric), but Floor 1 != 2"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 21,
+        "frame_id": [
+          1000,
+          988,
+          989,
+          997
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0009",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a brown bench made of wood in the floor 2.",
+      "target_category": "bench",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          2
+        ]
+      },
+      "target_attributes": {
+        "color": "brown",
+        "material": "wood",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        307
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 673,
+        "category": "bench",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (brown, wood), but Floor 1 != 2"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 307,
+        "frame_id": [
+          1062,
+          1059,
+          1060,
+          1063
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0010",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a brown shelving made of wood in the floor 2.",
+      "target_category": "shelving",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          2
+        ]
+      },
+      "target_attributes": {
+        "color": "brown",
+        "material": "wood",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        223,
+        235
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 376,
+        "category": "shelving",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (brown, wood), but Floor 1 != 2"
+      },
+      {
+        "object_id": 1201,
+        "category": "shelving",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (brown, wood), but Floor 0 != 2"
+      },
+      {
+        "object_id": 1190,
+        "category": "shelving",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (brown, wood), but Floor 0 != 2"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 223,
+        "frame_id": [
+          1131,
+          1128,
+          1130,
+          1129
+        ]
+      },
+      {
+        "object_id": 235,
+        "frame_id": [
+          1133,
+          1134,
+          1135,
+          1132
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0012",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a blue clothes made of fabric in the floor 2.",
+      "target_category": "clothes",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          2
+        ]
+      },
+      "target_attributes": {
+        "color": "blue",
+        "material": "fabric",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        229
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 224,
+        "category": "clothes",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'white' vs 'blue'"
+      },
+      {
+        "object_id": 226,
+        "category": "clothes",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'white' vs 'blue'"
+      },
+      {
+        "object_id": 216,
+        "category": "clothes",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'brown' vs 'blue'"
+      },
+      {
+        "object_id": 1144,
+        "category": "clothes",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (blue, fabric), but Floor 1 != 2"
+      },
+      {
+        "object_id": 225,
+        "category": "clothes",
+        "fail_reason": "wrong_attribute",
+        "debug_info": "Mismatch: Color: 'white' vs 'blue'"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 229,
+        "frame_id": [
+          1133,
+          1123,
+          1122,
+          1121
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "E1-0015",
+      "query_type": "E1_FloorAttribute_Semantic",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Find a white cabinet made of wood in the floor 1.",
+      "target_category": "cabinet",
+      "target_attributes": []
+    },
+    "constraints": {
+      "floor_logic": {
+        "include": [
+          1
+        ]
+      },
+      "target_attributes": {
+        "color": "white",
+        "material": "wood",
+        "matching_method": "exact_atomic_match"
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        1151,
+        828,
+        829,
+        830,
+        831,
+        832,
+        833,
+        834,
+        835,
+        836,
+        837,
+        838,
+        839
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 26,
+        "category": "cabinet",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (white, wood), but Floor 2 != 1"
+      },
+      {
+        "object_id": 39,
+        "category": "cabinet",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (white, wood), but Floor 2 != 1"
+      },
+      {
+        "object_id": 42,
+        "category": "cabinet",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (white, wood), but Floor 2 != 1"
+      },
+      {
+        "object_id": 255,
+        "category": "cabinet",
+        "fail_reason": "wrong_floor",
+        "debug_info": "Attributes match (white, wood), but Floor 2 != 1"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 1151,
+        "frame_id": [
+          321,
+          320,
+          323,
+          324
+        ]
+      },
+      {
+        "object_id": 828,
+        "frame_id": [
+          231,
+          152,
+          96,
+          230
+        ]
+      },
+      {
+        "object_id": 829,
+        "frame_id": [
+          243,
+          454,
+          152,
+          220
+        ]
+      },
+      {
+        "object_id": 830,
+        "frame_id": [
+          453,
+          230,
+          457,
+          454
+        ]
+      },
+      {
+        "object_id": 831,
+        "frame_id": [
+          229,
+          451,
+          459
+        ]
+      },
+      {
+        "object_id": 832,
+        "frame_id": [
+          229
+        ]
+      },
+      {
+        "object_id": 833,
+        "frame_id": [
+          449,
+          450,
+          460
+        ]
+      },
+      {
+        "object_id": 834,
+        "frame_id": [
+          455
+        ]
+      },
+      {
+        "object_id": 835,
+        "frame_id": [
+          454,
+          228,
+          456,
+          450
+        ]
+      },
+      {
+        "object_id": 836,
+        "frame_id": [
+          247,
+          454,
+          248,
+          246
+        ]
+      },
+      {
+        "object_id": 837,
+        "frame_id": [
+          231,
+          152,
+          91,
+          230
+        ]
+      },
+      {
+        "object_id": 838,
+        "frame_id": [
+          228,
+          451,
+          227,
+          459
+        ]
+      },
+      {
+        "object_id": 839,
+        "frame_id": [
+          455,
+          451,
+          459,
+          447
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0002",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you look for a chest near a bed that isn’t made of fabric?",
+      "target_category": "chest",
+      "target_attributes": []
+    },
+    "constraints": {
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "bed",
+          "negate": false,
+          "anchor_constraints": {
+            "negation_attributes": {
+              "type": "material",
+              "negated_value": "fabric",
+              "filtering_method": "group_based_exclusion"
+            }
+          }
+        }
+      ],
+      "gt_anchor_details": [
+        {
+          "target_id": 133,
+          "valid_anchors": [
+            {
+              "anchor_id": 142,
+              "actual_value": "wood"
+            }
+          ]
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        133
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 523,
+        "category": "chest",
+        "fail_reason": "anchor_has_negated_attribute",
+        "debug_info": "Spatial relation exists, but anchor matches negated attribute: Anchor(540) is 'fabric'"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 133,
+        "frame_id": [
+          1089,
+          1143,
+          1090,
+          1088
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0003",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Can you grab a hat from the entryway for me?",
+      "target_category": "hat",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "entryway"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        358
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 1146,
+        "category": "hat",
+        "fail_reason": "wrong_room",
+        "debug_info": "In laundry room, expected entryway"
+      },
+      {
+        "object_id": 1148,
+        "category": "hat",
+        "fail_reason": "wrong_room",
+        "debug_info": "In laundry room, expected entryway"
+      },
+      {
+        "object_id": 1147,
+        "category": "hat",
+        "fail_reason": "wrong_room",
+        "debug_info": "In laundry room, expected entryway"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 358,
+        "frame_id": [
+          114,
+          720,
+          842,
+          110
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0005",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you grab a picture from the bathroom for me?",
+      "target_category": "picture",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [
+          "bathroom"
+        ],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": []
+    },
+    "ground_truth": {
+      "object_ids": [
+        4,
+        17
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 354,
+        "category": "picture",
+        "fail_reason": "wrong_room",
+        "debug_info": "In entryway, expected bathroom"
+      },
+      {
+        "object_id": 363,
+        "category": "picture",
+        "fail_reason": "wrong_room",
+        "debug_info": "In entryway, expected bathroom"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 4,
+        "frame_id": [
+          998,
+          995,
+          997,
+          996
+        ]
+      },
+      {
+        "object_id": 17,
+        "frame_id": [
+          999,
+          995,
+          998,
+          996
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "query_id": "F1-0015",
+      "query_type": "F1_Fuzzy",
+      "scene_id": "00844-q5QZSEeHe5g",
+      "episode_id": "ep_000"
+    },
+    "query": {
+      "text": "Could you look for an armchair that's close to a pillow near a table?",
+      "target_category": "armchair",
+      "target_attributes": []
+    },
+    "constraints": {
+      "room_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "area_logic": {
+        "include": [],
+        "exclude": []
+      },
+      "spatial_relations": [
+        {
+          "relation": "near",
+          "anchor_category": "pillow",
+          "negate": false,
+          "anchor_attributes": [],
+          "anchor_constraints": {
+            "relation": "near",
+            "anchor_category": "table",
+            "negate": false
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "object_ids": [
+        908,
+        912
+      ]
+    },
+    "hard_negatives": [
+      {
+        "object_id": 906,
+        "category": "armchair",
+        "fail_reason": "chain_mismatch",
+        "debug_info": "Found near pillow, but that neighbor has no near table"
+      }
+    ],
+    "key_frames": [
+      {
+        "object_id": 908,
+        "frame_id": [
+          188,
+          514,
+          187,
+          186
+        ]
+      },
+      {
+        "object_id": 912,
+        "frame_id": [
+          511,
+          186,
+          510,
+          185
+        ]
+      }
+    ]
+  }
+]
